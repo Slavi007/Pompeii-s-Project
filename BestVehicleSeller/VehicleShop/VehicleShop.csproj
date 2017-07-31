@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9D06309-37A2-4113-AB2E-FD92E7FA50F2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>VehicleShop</RootNamespace>
+    <AssemblyName>VehicleShop</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Air.cs" />
+    <Compile Include="Entities\GroundWay.cs" />
+    <Compile Include="Entities\Maritime.cs" />
+    <Compile Include="Entities\RailWay.cs" />
+    <Compile Include="Entities\RailWays\Metro.cs" />
+    <Compile Include="Entities\RailWays\Train.cs" />
+    <Compile Include="Entities\RoadWay.cs" />
+    <Compile Include="Entities\RoadWays\Bus.cs" />
+    <Compile Include="Entities\RoadWays\Car.cs" />
+    <Compile Include="Entities\RoadWays\Coupe.cs" />
+    <Compile Include="Entities\RoadWays\DailyCar.cs" />
+    <Compile Include="Entities\RoadWays\FamilyCar.cs" />
+    <Compile Include="Entities\RoadWays\LuxuryCar.cs" />
+    <Compile Include="Entities\RoadWays\Minivan.cs" />
+    <Compile Include="Entities\RoadWays\Motorcycle.cs" />
+    <Compile Include="Entities\RoadWays\OffRoaders.cs" />
+    <Compile Include="Entities\RoadWays\Roadster.cs" />
+    <Compile Include="Entities\RoadWays\Sedan.cs" />
+    <Compile Include="Entities\RoadWays\SportCar.cs" />
+    <Compile Include="Entities\RoadWays\SuperCar.cs" />
+    <Compile Include="Entities\RoadWays\Truck.cs" />
+    <Compile Include="Entities\RoadWays\Van.cs" />
+    <Compile Include="Entities\RoadWays\Wagon.cs" />
+    <Compile Include="Entities\Space.cs" />
+    <Compile Include="Entities\Vehicle.cs" />
+    <Compile Include="Interfaces\IDevaluation.cs" />
+    <Compile Include="Interfaces\IElectrical.cs" />
+    <Compile Include="Interfaces\IExtendable.cs" />
+    <Compile Include="Interfaces\IInternalCombustion.cs" />
+    <Compile Include="Interfaces\IPromoteable.cs" />
+    <Compile Include="Interfaces\ITuningable.cs" />
+    <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="StartUp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
