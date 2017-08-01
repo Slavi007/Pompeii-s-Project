@@ -57,6 +57,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RailWays\Metro.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.979" />
   </Class>
   <Class Name="VehicleShop.Entities.RailWays.Train" Collapsed="true">
     <Position X="26.75" Y="4.25" Width="1.5" />
@@ -71,32 +72,36 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Bus.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.997" />
   </Class>
-  <Class Name="VehicleShop.Entities.RoadWays.Car" Collapsed="true">
-    <Position X="19.75" Y="4.25" Width="1.5" />
+  <Class Name="VehicleShop.Entities.RoadWays.CarElectric" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\RoadWays\Car.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Entities\RoadWays\CarElectric.cs</FileName>
+      <NewMemberFileName>Entities\RoadWays\Car.cs</NewMemberFileName>
     </TypeIdentifier>
+    <Lollipop Position="0.992" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Coupe" Collapsed="true">
-    <Position X="25" Y="7" Width="1.5" />
+    <Position X="26.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Coupe.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.872" />
   </Class>
-  <Class Name="VehicleShop.Entities.RoadWays.DailyCar" Collapsed="true">
-    <Position X="19.75" Y="5.75" Width="1.5" />
+  <Class Name="VehicleShop.Entities.RoadWays.DailyCarElectric" Collapsed="true">
+    <Position X="16.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Entities\RoadWays\DailyCar.cs</FileName>
+      <FileName>Entities\RoadWays\DailyCarElectric.cs</FileName>
+      <NewMemberFileName>Entities\RoadWays\DailyCar.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.931" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.FamilyCar" Collapsed="true">
-    <Position X="18" Y="5.75" Width="1.5" />
+    <Position X="19.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\FamilyCar.cs</FileName>
@@ -104,14 +109,15 @@
     <Lollipop Position="0.923" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.LuxuryCar" Collapsed="true">
-    <Position X="16.25" Y="5.75" Width="1.5" />
+    <Position X="18" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>Entities\RoadWays\LuxuryCar.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.992" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Minivan" Collapsed="true">
-    <Position X="19.75" Y="7" Width="1.5" />
+    <Position X="21.5" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Minivan.cs</FileName>
@@ -123,9 +129,10 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Motorcycle.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.952" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.OffRoaders" Collapsed="true">
-    <Position X="25" Y="5.75" Width="1.5" />
+    <Position X="26.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\OffRoaders.cs</FileName>
@@ -133,7 +140,7 @@
     <Lollipop Position="0.931" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Roadster" Collapsed="true">
-    <Position X="21.5" Y="7" Width="1.5" />
+    <Position X="23.25" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Roadster.cs</FileName>
@@ -141,25 +148,26 @@
     <Lollipop Position="0.94" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Sedan" Collapsed="true">
-    <Position X="18" Y="7" Width="1.5" />
+    <Position X="19.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Sedan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.SportCar" Collapsed="true">
-    <Position X="23.25" Y="5.75" Width="1.5" />
+    <Position X="25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\SportCar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.SuperCar" Collapsed="true">
-    <Position X="23.25" Y="7" Width="1.5" />
+    <Position X="25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>Entities\RoadWays\SuperCar.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.96" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Truck" Collapsed="true">
     <Position X="23.25" Y="4.25" Width="1.5" />
@@ -170,17 +178,39 @@
     <Lollipop Position="0.923" />
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Van" Collapsed="true">
-    <Position X="21.5" Y="5.75" Width="1.5" />
+    <Position X="23.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Van.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VehicleShop.Entities.RoadWays.Wagon" Collapsed="true">
-    <Position X="16.25" Y="7" Width="1.5" />
+    <Position X="18" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\RoadWays\Wagon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VehicleShop.Entities.RoadWays.DailyCar" Collapsed="true">
+    <Position X="21.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RoadWays\DailyCar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.95" />
+  </Class>
+  <Class Name="VehicleShop.Entities.RoadWays.Car" Collapsed="true">
+    <Position X="19.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RoadWays\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VehicleShop.Entities.RoadWays.CarIC" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RoadWays\CarIC.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="VehicleShop.Interfaces.IDevaluation" Collapsed="true">
@@ -230,6 +260,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAQAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="VehicleShop.Interfaces.IEspeciallyTaxable" Collapsed="true">
+    <Position X="17.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Interfaces\IEspeciallyTaxable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

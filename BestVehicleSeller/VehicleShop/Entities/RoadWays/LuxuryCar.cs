@@ -1,6 +1,11 @@
 ﻿namespace VehicleShop.Entities.RoadWays
 {
-    public class LuxuryCar : Car
+    using Interfaces;
+    public class LuxuryCar : CarIC, IEspeciallyTaxable
     {
+        public void ApplySpecialTax()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace VehicleShop.Entities.RoadWays
 {
-    public abstract class SportCar : Car
+    public abstract class SportCar : CarIC
     {
     }
 }

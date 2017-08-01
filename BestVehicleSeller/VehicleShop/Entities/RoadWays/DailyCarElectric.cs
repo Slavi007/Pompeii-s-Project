@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    public class Bus : RoadWay , IInternalCombustion
+    public class DailyCarElectric : CarElectric, IPromoteable
     {
     }
 }

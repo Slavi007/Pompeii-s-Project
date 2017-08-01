@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    public class DailyCar : Car, IPromoteable
+    public class DailyCar : CarIC, IPromoteable
     {
     }
 }

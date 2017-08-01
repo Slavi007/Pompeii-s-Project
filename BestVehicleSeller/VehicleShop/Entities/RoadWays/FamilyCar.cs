@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    public abstract class FamilyCar : Car, IExtendable, IPromoteable
+    public abstract class FamilyCar : CarIC, IExtendable, IPromoteable
     {
     }
 }

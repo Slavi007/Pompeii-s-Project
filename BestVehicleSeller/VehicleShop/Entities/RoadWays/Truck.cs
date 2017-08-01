@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    public class Truck : RoadWay, IExtendable
+    public class Truck : RoadWay, IExtendable, IInternalCombustion
     {
     }
 }

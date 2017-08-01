@@ -1,6 +1,7 @@
 ﻿namespace VehicleShop.Entities.RoadWays
 {
-    public class Van : CarIC
+    public abstract class CarIC : Car
     {
+        
     }
 }

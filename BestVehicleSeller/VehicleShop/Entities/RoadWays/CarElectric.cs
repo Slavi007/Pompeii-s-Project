@@ -1,7 +1,8 @@
 ﻿namespace VehicleShop.Entities.RoadWays
 {
+    using Entities;
     using Interfaces;
-    public class SuperCar : SportCar, IEspeciallyTaxable
+    public abstract class CarElectric : Car, IEspeciallyTaxable
     {
         public void ApplySpecialTax()
         {

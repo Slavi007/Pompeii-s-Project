@@ -1,6 +1,8 @@
 ﻿namespace VehicleShop.Entities.RoadWays
 {
-    public class Motorcycle : RoadWay
+    using Interfaces;
+
+    public class Motorcycle : RoadWay, IInternalCombustion
     {
     }
 }

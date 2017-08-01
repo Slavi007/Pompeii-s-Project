@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\RoadWays\CarElectric.cs" />
     <Compile Include="Entities\Air.cs" />
     <Compile Include="Entities\GroundWay.cs" />
     <Compile Include="Entities\Maritime.cs" />
@@ -51,7 +52,9 @@
     <Compile Include="Entities\RoadWay.cs" />
     <Compile Include="Entities\RoadWays\Bus.cs" />
     <Compile Include="Entities\RoadWays\Car.cs" />
+    <Compile Include="Entities\RoadWays\CarIC.cs" />
     <Compile Include="Entities\RoadWays\Coupe.cs" />
+    <Compile Include="Entities\RoadWays\DailyCarElectric.cs" />
     <Compile Include="Entities\RoadWays\DailyCar.cs" />
     <Compile Include="Entities\RoadWays\FamilyCar.cs" />
     <Compile Include="Entities\RoadWays\LuxuryCar.cs" />
@@ -69,6 +72,7 @@
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Interfaces\IDevaluation.cs" />
     <Compile Include="Interfaces\IElectrical.cs" />
+    <Compile Include="Interfaces\IEspeciallyTaxable.cs" />
     <Compile Include="Interfaces\IExtendable.cs" />
     <Compile Include="Interfaces\IInternalCombustion.cs" />
     <Compile Include="Interfaces\IPromoteable.cs" />

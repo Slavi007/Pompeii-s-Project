@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    public class OffRoaders : Car, IExtendable
+    public class OffRoaders : CarIC, IExtendable
     {
     }
 }

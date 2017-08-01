@@ -1,7 +1,7 @@
 ﻿namespace VehicleShop.Entities.RailWays
 {
     using Interfaces;
-    public class Metro : RailWay
+    public class Metro : RailWay , IElectrical
     {
     }
 }
