@@ -4,7 +4,7 @@
     using Interfaces;
     public abstract class CarIc : Car , IInternalCombustion
     {
-        public int EnginePower { get; }
+        public double EnginePower { get; }
         public int EngineVolume { get; }
         public int ValveNumber { get; }
         public FuelType Fuel { get; }

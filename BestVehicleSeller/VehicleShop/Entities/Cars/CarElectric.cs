@@ -5,7 +5,7 @@
     public abstract class CarElectric : Car, IElectrical, IEspeciallyTaxable
     {
         public int BatteryCapacity { get; }
-        public int MotorPower { get; }
+        public double MotorPower { get; }
         public int Range { get; }
 
         public void ApplySpecialTax()

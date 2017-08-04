@@ -1,5 +1,8 @@
 ﻿namespace VehicleShop.Entities
 {
+    using System;
+    using Enums;
+
     public abstract class Car : Vehicle
     {
         public int Doors { get; private set; }

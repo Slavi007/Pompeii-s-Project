@@ -4,7 +4,7 @@
 
     public interface IInternalCombustion
     {
-        int EnginePower { get; }        // in kW (for unification) or in Hp
+        double EnginePower { get; }        // in kW (for unification) or in Hp
         int EngineVolume { get; }       // in cm3
         int ValveNumber { get; }
         FuelType Fuel { get; }
