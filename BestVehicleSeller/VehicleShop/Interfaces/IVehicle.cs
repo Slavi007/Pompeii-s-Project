@@ -1,22 +1,15 @@
-﻿using System;
-
-namespace VehicleShop.Interfaces
+﻿namespace VehicleShop.Interfaces
 {
-    public interface IVehicle
-    {
-        string CarMaker { get; }
+    using System;
 
+    public interface IVehicle : IManufacturing, IMovement
+    {
         string Model { get; }
-        double MaxSpeed { get ; }
+        DateTime OriginDate { get; }
 
         decimal Price { get ; }
 
         double LoadCapacity {get; }
-
         string Colour { get; }
-
-        double Acceleration { get; }
-
-        DateTime OriginDate { get; }
     }
 }

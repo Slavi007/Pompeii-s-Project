@@ -2,11 +2,10 @@
 {
     public interface IEspeciallyTaxable
     {
-        //TODO:
         // Increase or decrease the Price
+        // For Example :
         // -35% for Electrical,
         // +15% for Luxury & SuperCar
-
         void ApplySpecialTax();
     }
 }

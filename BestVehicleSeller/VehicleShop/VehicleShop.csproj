@@ -42,39 +42,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\RoadWays\CarElectric.cs" />
-    <Compile Include="Entities\Air.cs" />
-    <Compile Include="Entities\GroundWay.cs" />
-    <Compile Include="Entities\Maritime.cs" />
-    <Compile Include="Entities\RailWay.cs" />
-    <Compile Include="Entities\RailWays\Metro.cs" />
-    <Compile Include="Entities\RailWays\Train.cs" />
-    <Compile Include="Entities\RoadWay.cs" />
-    <Compile Include="Entities\RoadWays\Bus.cs" />
-    <Compile Include="Entities\RoadWays\Car.cs" />
-    <Compile Include="Entities\RoadWays\CarIC.cs" />
-    <Compile Include="Entities\RoadWays\Coupe.cs" />
-    <Compile Include="Entities\RoadWays\DailyCarElectric.cs" />
-    <Compile Include="Entities\RoadWays\DailyCar.cs" />
-    <Compile Include="Entities\RoadWays\FamilyCar.cs" />
-    <Compile Include="Entities\RoadWays\LuxuryCar.cs" />
-    <Compile Include="Entities\RoadWays\Minivan.cs" />
-    <Compile Include="Entities\RoadWays\Motorcycle.cs" />
-    <Compile Include="Entities\RoadWays\OffRoaders.cs" />
-    <Compile Include="Entities\RoadWays\Roadster.cs" />
-    <Compile Include="Entities\RoadWays\Sedan.cs" />
-    <Compile Include="Entities\RoadWays\SportCar.cs" />
-    <Compile Include="Entities\RoadWays\SuperCar.cs" />
-    <Compile Include="Entities\RoadWays\Truck.cs" />
-    <Compile Include="Entities\RoadWays\Van.cs" />
-    <Compile Include="Entities\RoadWays\Wagon.cs" />
-    <Compile Include="Entities\Space.cs" />
+    <Compile Include="Entities\Cars\CarElectric.cs" />
+    <Compile Include="Entities\Car.cs" />
+    <Compile Include="Entities\Cars\CarIc.cs" />
+    <Compile Include="Entities\Cars\CarsIc\SportCars\Coupe.cs" />
+    <Compile Include="Entities\Cars\CarsElectric\CityCarElectric.cs" />
+    <Compile Include="Entities\Cars\CarsIc\FamilyCar.cs" />
+    <Compile Include="Entities\Cars\CarsIc\LuxuryCar.cs" />
+    <Compile Include="Entities\Cars\CarsIc\FamilyCars\Minivan.cs" />
+    <Compile Include="Entities\Motorcycles\Motorcycle.cs" />
+    <Compile Include="Entities\Cars\CarsIc\OffRoaders.cs" />
+    <Compile Include="Entities\Cars\CarsIc\SportCars\Roadster.cs" />
+    <Compile Include="Entities\Cars\CarsIc\Sedan.cs" />
+    <Compile Include="Entities\Cars\CarsIc\SportCar.cs" />
+    <Compile Include="Entities\Cars\CarsIc\SportCars\SuperCar.cs" />
+    <Compile Include="Entities\Cars\CarsIc\FamilyCars\Wagon.cs" />
     <Compile Include="Entities\Vehicle.cs" />
+    <Compile Include="Enums\Brand.cs" />
+    <Compile Include="Enums\FuelType.cs" />
     <Compile Include="Interfaces\IDevaluation.cs" />
     <Compile Include="Interfaces\IElectrical.cs" />
     <Compile Include="Interfaces\IEspeciallyTaxable.cs" />
     <Compile Include="Interfaces\IExtendable.cs" />
     <Compile Include="Interfaces\IInternalCombustion.cs" />
+    <Compile Include="Interfaces\IManufacturing.cs" />
+    <Compile Include="Interfaces\IMovement.cs" />
     <Compile Include="Interfaces\IPromoteable.cs" />
     <Compile Include="Interfaces\ITuningable.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
@@ -85,6 +77,8 @@
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="StaticData\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
