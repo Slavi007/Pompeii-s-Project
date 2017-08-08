@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleShop", "VehicleShop\VehicleShop.csproj", "{F9D06309-37A2-4113-AB2E-FD92E7FA50F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{4E559772-DB38-48A6-B669-BE41F8184345}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Best Vehicle Seller Client", "GUI\Best Vehicle Seller Client.csproj", "{4E559772-DB38-48A6-B669-BE41F8184345}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
