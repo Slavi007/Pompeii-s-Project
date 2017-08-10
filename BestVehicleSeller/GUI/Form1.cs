@@ -27,5 +27,17 @@ namespace GUI
             frmAdd Add = new frmAdd();
             Add.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmTunning Tunning = new frmTunning();
+            Tunning.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmSell Sell = new frmSell();
+            Sell.Show();
+        }
     }
 }

@@ -21,5 +21,42 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void rbCar_Click(object sender, EventArgs e)
+        {
+            lblText.Visible = true;
+            lbltype.Visible = true;
+            cmbType.Visible = true;
+            cmbtype2.Visible = true;
+        }
+
+        private void frmAdd_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbCar_CheckedChanged(object sender, EventArgs e)
+        {
+            lblText.Visible = false;
+            lbltype.Visible = false;
+            cmbType.Visible = false;
+            cmbtype2.Visible = false;
+        }
+
+        private void rbMotor_Click(object sender, EventArgs e)
+        {
+            lblText.Visible = true;
+            lbltype.Visible = true;
+            cmbType.Visible = true;
+            cmbtype2.Visible = true;
+        }
+
+        private void rbMotor_CheckedChanged(object sender, EventArgs e)
+        {
+            lblText.Visible = false;
+            lbltype.Visible = false;
+            cmbType.Visible = false;
+            cmbtype2.Visible = false;
+        }
     }
 }

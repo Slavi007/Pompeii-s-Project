@@ -8,7 +8,6 @@
         public int EngineVolume { get; }
         public int ValveNumber { get; }
         public FuelType Fuel { get; }
-        public int TankCapacity { get; }
         public double FuelConsuption { get; }
     }
 }

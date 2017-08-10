@@ -8,21 +8,11 @@
 
     public class Motorcycle : Vehicle, IInternalCombustion, IPromoteable, ITuningable
     {
-        public Motorcycle(string carMaker, Brand brand, double maxSpeed, double acceleration, string model, DateTime originDate, decimal price, double loadCapacity, string colour, double enginePower, int engineVolume, int valveNumber, FuelType fuel, int tankCapacity, double fuelConsuption) : base(carMaker, brand, maxSpeed, acceleration, model, originDate, price, loadCapacity, colour)
-        {
-            this.EnginePower = enginePower;
-            this.EngineVolume = engineVolume;
-            this.ValveNumber = valveNumber;
-            this.Fuel = fuel;
-            this.TankCapacity = tankCapacity;
-            this.FuelConsuption = fuelConsuption;
-        }
-
+       
         public double EnginePower { get; private set; }
         public int EngineVolume { get; private set; }
         public int ValveNumber { get; private set; }
         public FuelType Fuel { get; private set; }
-        public int TankCapacity { get; private set; }
         public double FuelConsuption { get; private set; }
 
         public void ApplyPromotion()

@@ -8,3 +8,5 @@ C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVe
 C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.csproj.GenerateResource.Cache
 C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.exe
 C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.pdb
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.frmTunning.resources
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.frmSell.resources

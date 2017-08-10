@@ -8,7 +8,6 @@
         int EngineVolume { get; }       // in cm3
         int ValveNumber { get; }
         FuelType Fuel { get; }
-        int TankCapacity { get; }
         double FuelConsuption { get; }
     }
 }

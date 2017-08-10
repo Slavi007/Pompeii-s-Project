@@ -45,18 +45,21 @@
     <Compile Include="Entities\Cars\CarElectric.cs" />
     <Compile Include="Entities\Car.cs" />
     <Compile Include="Entities\Cars\CarIc.cs" />
+    <Compile Include="Entities\Cars\CarsElectric\CruiseCarElectric.cs" />
+    <Compile Include="Entities\Cars\CarsIc\FamilyCars\Sedan.cs" />
     <Compile Include="Entities\Cars\CarsIc\SportCars\Coupe.cs" />
     <Compile Include="Entities\Cars\CarsElectric\CityCarElectric.cs" />
     <Compile Include="Entities\Cars\CarsIc\FamilyCar.cs" />
     <Compile Include="Entities\Cars\CarsIc\LuxuryCar.cs" />
-    <Compile Include="Entities\Cars\CarsIc\FamilyCars\Minivan.cs" />
+    <Compile Include="Entities\Cars\CarsIc\FamilyCars\SUV.cs" />
     <Compile Include="Entities\Motorcycles\Motorcycle.cs" />
     <Compile Include="Entities\Cars\CarsIc\OffRoaders.cs" />
     <Compile Include="Entities\Cars\CarsIc\SportCars\Roadster.cs" />
-    <Compile Include="Entities\Cars\CarsIc\Sedan.cs" />
     <Compile Include="Entities\Cars\CarsIc\SportCar.cs" />
-    <Compile Include="Entities\Cars\CarsIc\SportCars\SuperCar.cs" />
     <Compile Include="Entities\Cars\CarsIc\FamilyCars\Wagon.cs" />
+    <Compile Include="Entities\Motorcycles\Motorcycles\Cruiser.cs" />
+    <Compile Include="Entities\Motorcycles\Motorcycles\Scooter.cs" />
+    <Compile Include="Entities\Motorcycles\Motorcycles\StreetSport.cs" />
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Enums\Brand.cs" />
     <Compile Include="Enums\FuelType.cs" />
@@ -78,6 +81,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
