@@ -63,6 +63,7 @@
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Enums\Brand.cs" />
     <Compile Include="Enums\FuelType.cs" />
+    <Compile Include="Interfaces\IBodyKit.cs" />
     <Compile Include="Interfaces\IDevaluation.cs" />
     <Compile Include="Interfaces\IElectrical.cs" />
     <Compile Include="Interfaces\IEspeciallyTaxable.cs" />
@@ -82,6 +83,7 @@
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

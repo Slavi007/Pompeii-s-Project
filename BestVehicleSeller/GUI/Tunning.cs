@@ -21,5 +21,20 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void gpQuestion_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbCar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Event for tunning goes here : 
+        }
     }
 }
