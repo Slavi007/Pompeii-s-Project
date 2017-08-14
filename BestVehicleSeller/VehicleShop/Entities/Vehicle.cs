@@ -1,12 +1,12 @@
 ﻿namespace VehicleShop.Entities
 {
     using System;
+    using System.Collections;
     using VehicleShop.Interfaces;
     using Enums;
 
     public abstract class Vehicle : IVehicle
     {
-        
         public string CarMaker { get; private set; }
         public Brand Brand { get; private set; }
 
@@ -16,5 +16,7 @@
         public DateTime OriginDate { get; }
         public decimal Price { get; protected set; }
         public string Colour { get; private set; }
+
+        public IDictionary Extras { get; }
     }
 }

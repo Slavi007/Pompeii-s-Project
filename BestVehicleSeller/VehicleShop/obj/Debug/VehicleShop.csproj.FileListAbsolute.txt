@@ -9,3 +9,9 @@ C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVe
 C:\Users\rado_\Desktop\SoftUni\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe.config
 C:\Users\rado_\Desktop\SoftUni\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.csprojResolveAssemblyReference.cache
 >>>>>>> 78fb16c1f81fad7183675451a18d6cdeb8c3989c
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe.config
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.exe
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.pdb
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.csprojResolveAssemblyReference.cache
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.pdb

@@ -1,7 +1,7 @@
-﻿using VehicleShop.Interfaces;
-
-namespace VehicleShop.Entities.Cars.CarsElectric
+﻿namespace VehicleShop.Entities.Cars.CarsElectric
 {
+    using VehicleShop.Interfaces;
+
     class CruiseCarElectric : CarElectric, IPromoteable
     {
         public void ApplyPromotion()

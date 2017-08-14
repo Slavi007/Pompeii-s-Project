@@ -23,3 +23,6 @@ C:\Users\rado_\Desktop\SoftUni\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug
 C:\Users\rado_\Desktop\SoftUni\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.Properties.Resources.resources
 C:\Users\rado_\Desktop\SoftUni\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.csproj.GenerateResource.Cache
 >>>>>>> 78fb16c1f81fad7183675451a18d6cdeb8c3989c
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\GUI\bin\Debug\Best Vehicle Seller Client.exe.config
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.exe
+C:\Projects!\m43_CSOOPAdvanced_2017_07\TeamWork\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.pdb

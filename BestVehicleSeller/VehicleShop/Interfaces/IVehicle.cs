@@ -2,7 +2,7 @@
 {
     using System;
 
-    public interface IVehicle : IManufacturing, IMovement
+    public interface IVehicle : IManufacturing, IMovement, IExtras
     {
         DateTime OriginDate { get; }
 
