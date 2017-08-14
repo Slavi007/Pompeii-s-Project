@@ -5,8 +5,11 @@
         Ford,
         GM,
         BMW,
-        WolksVagen,
+        Wolksvagen,
         Opel,
-        Renault
+        Renault,
+        Nisan,
+        Honda,
+        Lada
     }
 }
