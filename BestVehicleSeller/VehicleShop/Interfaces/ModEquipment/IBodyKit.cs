@@ -3,6 +3,7 @@
     public interface IBodyKit
     {
         void ApplyBodyKit();
+        void DetachBodyKit();
 
     }
 }

@@ -5,25 +5,37 @@
     using Interfaces;
     using VehicleShop.Enums;
     using VehicleShop.Interfaces.ModPrice;
+    using VehicleShop.StaticData;
 
-    public abstract class CarElectric : Car, IElectrical, IEspeciallyTaxable
+    public abstract class CarElectric : Car, IElectrical, IEspeciallyTaxable, IPromoteable
     {
         public int BatteryCapacity { get; }
         public double MotorPower { get; }
         public int Range { get; }
 
+        public CarElectric(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour)
+            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
+        {
+        }
+
         public void ApplySpecialTax()
         {
-            throw new System.NotImplementedException();
+            this.CustomPrice -= base.Price * PriceNumbers.SpecialTaxElectroCar / 100;
         }
 
         public void DetachSpecialTax()
         {
-            throw new NotImplementedException();
+            this.CustomPrice += base.Price * PriceNumbers.SpecialTaxElectroCar / 100;
         }
 
-        public CarElectric(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
+        public void ApplyPromotion()
         {
+            this.CustomPrice -= base.Price * PriceNumbers.PromotionCarElectric / 100;
+        }
+
+        public void DetachPromotion()
+        {
+            this.CustomPrice += base.Price * PriceNumbers.PromotionCarElectric / 100;
         }
     }
 }

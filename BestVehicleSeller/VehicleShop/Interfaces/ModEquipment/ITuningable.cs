@@ -7,5 +7,7 @@
         // Acceleration -= 10%
         // FuelConsumption =+15%
         void ApplyTuning();
+
+        void DetachTuning();
     }
 }
