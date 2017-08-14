@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\IO\ConsoleReader.cs" />
+    <Compile Include="Core\IO\ConsoleWriter.cs" />
+    <Compile Include="Core\IO\FileReader.cs" />
+    <Compile Include="Core\IO\FileWriter.cs" />
     <Compile Include="Entities\Cars\CarElectric.cs" />
     <Compile Include="Entities\Car.cs" />
     <Compile Include="Entities\Cars\CarIc.cs" />
@@ -63,6 +67,8 @@
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Enums\Brand.cs" />
     <Compile Include="Enums\FuelType.cs" />
+    <Compile Include="Interfaces\IO\IReader.cs" />
+    <Compile Include="Interfaces\IO\IWriter.cs" />
     <Compile Include="Interfaces\ModEquipment\IBodyKit.cs" />
     <Compile Include="Interfaces\ModPrice\IDevaluation.cs" />
     <Compile Include="Interfaces\IElectrical.cs" />
@@ -87,8 +93,17 @@
     <None Include="ClassDiagram3.cd" />
     <None Include="ClassDiagram4.cd" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources.Extras\" />
+    <Content Include="Resources.Extras\BMW.txt" />
+    <Content Include="Resources.Extras\Ford.txt" />
+    <Content Include="Resources.Extras\GM.txt" />
+    <Content Include="Resources.Extras\Honda.txt" />
+    <Content Include="Resources.Extras\Lada.txt" />
+    <Content Include="Resources.Extras\Nisan.txt" />
+    <Content Include="Resources.Extras\Opel.txt" />
+    <Content Include="Resources.Extras\Renault.txt" />
+    <Content Include="Resources.Extras\Wolksvagen.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
