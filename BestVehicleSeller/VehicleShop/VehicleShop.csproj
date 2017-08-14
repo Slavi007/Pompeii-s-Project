@@ -52,28 +52,28 @@
     <Compile Include="Entities\Cars\CarsIc\FamilyCar.cs" />
     <Compile Include="Entities\Cars\CarsIc\LuxuryCar.cs" />
     <Compile Include="Entities\Cars\CarsIc\FamilyCars\SUV.cs" />
-    <Compile Include="Entities\Motorcycles\Motorcycle.cs" />
+    <Compile Include="Entities\Motorcycle.cs" />
     <Compile Include="Entities\Cars\CarsIc\OffRoaders.cs" />
     <Compile Include="Entities\Cars\CarsIc\SportCars\Roadster.cs" />
     <Compile Include="Entities\Cars\CarsIc\SportCar.cs" />
     <Compile Include="Entities\Cars\CarsIc\FamilyCars\Wagon.cs" />
-    <Compile Include="Entities\Motorcycles\Motorcycles\Cruiser.cs" />
-    <Compile Include="Entities\Motorcycles\Motorcycles\Scooter.cs" />
-    <Compile Include="Entities\Motorcycles\Motorcycles\StreetSport.cs" />
+    <Compile Include="Entities\Motorcycles\Cruiser.cs" />
+    <Compile Include="Entities\Motorcycles\Scooter.cs" />
+    <Compile Include="Entities\Motorcycles\StreetSport.cs" />
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Enums\Brand.cs" />
     <Compile Include="Enums\FuelType.cs" />
-    <Compile Include="Interfaces\IBodyKit.cs" />
-    <Compile Include="Interfaces\IDevaluation.cs" />
+    <Compile Include="Interfaces\ModEquipment\IBodyKit.cs" />
+    <Compile Include="Interfaces\ModPrice\IDevaluation.cs" />
     <Compile Include="Interfaces\IElectrical.cs" />
-    <Compile Include="Interfaces\IEspeciallyTaxable.cs" />
-    <Compile Include="Interfaces\IExtendable.cs" />
-    <Compile Include="Interfaces\IExtras.cs" />
+    <Compile Include="Interfaces\ModPrice\IEspeciallyTaxable.cs" />
+    <Compile Include="Interfaces\ModEquipment\IExtendable.cs" />
+    <Compile Include="Interfaces\ModEquipment\IExtras.cs" />
     <Compile Include="Interfaces\IInternalCombustion.cs" />
     <Compile Include="Interfaces\IManufacturing.cs" />
     <Compile Include="Interfaces\IMovement.cs" />
-    <Compile Include="Interfaces\IPromoteable.cs" />
-    <Compile Include="Interfaces\ITuningable.cs" />
+    <Compile Include="Interfaces\ModPrice\IPromoteable.cs" />
+    <Compile Include="Interfaces\ModEquipment\ITuningable.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +87,8 @@
     <None Include="ClassDiagram3.cd" />
     <None Include="ClassDiagram4.cd" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
