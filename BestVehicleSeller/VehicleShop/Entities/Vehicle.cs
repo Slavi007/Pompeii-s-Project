@@ -41,10 +41,15 @@
             protected set { this.extras = value; }
         }
 
-        public void ApplyExtras(IDictionary<string, decimal> extras)
+        public void ApplyExtras(IDictionary<string, decimal> newExtras)
         {
-            this.Extras = extras;
-            this.CustomPrice += extras.Values.Sum();
+            if (this.Extras.Count>0)
+            {
+                this.CustomPrice -= this.Extras.Values.Sum();
+            }
+
+            this.Extras = newExtras;
+            this.CustomPrice += this.Extras.Values.Sum();
         }
     }
 }

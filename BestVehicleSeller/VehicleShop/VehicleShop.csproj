@@ -83,6 +83,7 @@
     <Compile Include="Interfaces\IVehicle.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticData\ExtendNumbers.cs" />
     <Compile Include="StaticData\PriceNumbers.cs" />
     <Compile Include="StaticData\TuningNumbers.cs" />
   </ItemGroup>
