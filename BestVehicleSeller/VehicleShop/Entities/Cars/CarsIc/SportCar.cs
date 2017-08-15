@@ -7,22 +7,26 @@
 
     public abstract class SportCar : CarIc , ITuningable, IBodyKit
     {
+        public bool IsBodyKitApplied { get; }
+
         public void ApplyBodyKit()
         {
             throw new NotImplementedException();
         }
 
-        public void DetachBodyKit()
+        public void CancelBodyKit()
         {
             throw new NotImplementedException();
         }
 
+        public bool IsTuningApplied { get; }
+
         public void ApplyTuning()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachTuning()
+        public void CancelTuning()
         {
             throw new NotImplementedException();
         }

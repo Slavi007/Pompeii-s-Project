@@ -28,7 +28,7 @@
 
         public IDictionary<string, decimal> ReadExtrasFile(string fileName)
         {
-            string path = Path.Combine(PathToFolder, FileName);
+            string path = Path.Combine(this.PathToFolder, this.FileName);
             IDictionary<string, decimal> dict = new Dictionary<string, decimal>();
 
             using (StreamReader reader = new StreamReader(path))

@@ -7,24 +7,28 @@
 
     public class Roadster : SportCar, IPromoteable, IDevaluation
     {
+        public bool IsPromotionApplied { get; }
+
         public void ApplyPromotion()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachPromotion()
+        public void CancelPromotion()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
+
+        public bool IsDevaluationApplied { get; }
 
         public void ApplyDevaluation()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachDevaluation()
+        public void CancelDevaluation()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public Roadster(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)

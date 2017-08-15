@@ -8,29 +8,40 @@
 
     public abstract class FamilyCar : CarIc, IExtendable, IPromoteable, IDevaluation
     {
+        public bool IsExtensionApplied { get; }
+
         public void ApplyExtension()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
+
+        public void CancelExtension()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsPromotionApplied { get; }
 
         public void ApplyPromotion()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachPromotion()
+        public void CancelPromotion()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
+
+        public bool IsDevaluationApplied { get; }
 
         public void ApplyDevaluation()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachDevaluation()
+        public void CancelDevaluation()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public FamilyCar(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)

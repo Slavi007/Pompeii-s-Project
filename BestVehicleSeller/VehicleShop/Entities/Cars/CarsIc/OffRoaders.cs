@@ -8,27 +8,38 @@
 
     public class OffRoaders : CarIc, IExtendable, IPromoteable, ITuningable
     {
+        public bool IsExtensionApplied { get; }
+
         public void ApplyExtension()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
+
+        public void CancelExtension()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsPromotionApplied { get; }
 
         public void ApplyPromotion()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachPromotion()
+        public void CancelPromotion()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
+
+        public bool IsTuningApplied { get; }
 
         public void ApplyTuning()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public void DetachTuning()
+        public void CancelTuning()
         {
             throw new NotImplementedException();
         }
