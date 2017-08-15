@@ -58,6 +58,7 @@
     <Compile Include="Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="Engine.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +125,13 @@
     <None Include="Resources\Icon.ico" />
     <None Include="Resources\Background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VehicleShop\VehicleShop.csproj">
+      <Project>{F9D06309-37A2-4113-AB2E-FD92E7FA50F2}</Project>
+      <Name>VehicleShop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

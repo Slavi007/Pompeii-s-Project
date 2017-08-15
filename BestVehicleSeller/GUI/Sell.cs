@@ -21,5 +21,11 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void frmSell_Load(object sender, EventArgs e)
+        {
+            Engine print = new Engine();
+            label1.Text = print.PrintCar();
+        }
     }
 }

@@ -34,6 +34,8 @@
             this.rbCar = new System.Windows.Forms.RadioButton();
             this.rbMotor = new System.Windows.Forms.RadioButton();
             this.gpQuestion = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.gpQuestion.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,6 +108,26 @@
             this.gpQuestion.TabStop = false;
             this.gpQuestion.Text = "What vehicle do you want to sell?";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(299, 172);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 40);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(299, 304);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 40);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label2";
+            // 
             // frmSell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +136,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(684, 661);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.gpQuestion);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -122,9 +146,11 @@
             this.Name = "frmSell";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sell";
+            this.Load += new System.EventHandler(this.frmSell_Load);
             this.gpQuestion.ResumeLayout(false);
             this.gpQuestion.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,5 +161,7 @@
         private System.Windows.Forms.RadioButton rbCar;
         private System.Windows.Forms.RadioButton rbMotor;
         private System.Windows.Forms.GroupBox gpQuestion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

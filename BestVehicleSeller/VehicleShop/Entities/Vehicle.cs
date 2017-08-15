@@ -10,10 +10,10 @@
     {
         private IDictionary<string, decimal> extras;
 
-        protected Vehicle(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate,
+        protected Vehicle(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate,
             decimal price, string colour)
         {
-            this.CarMaker = carMaker;
+            this.CarModel = carMaker;
             this.Brand = brand;
             this.MaxSpeed = maxSpeed;
             this.Acceleration = acceleration;
@@ -24,8 +24,8 @@
             this.Extras = null;
         }
 
-        public string CarMaker { get; private set; }
-        public Brand Brand { get; private set; }
+        public string CarModel { get; private set; }
+        public string Brand { get; private set; }
 
         public double MaxSpeed { get; protected set; }
         public double Acceleration { get; protected set; }

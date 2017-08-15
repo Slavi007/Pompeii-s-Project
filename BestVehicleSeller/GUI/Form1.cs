@@ -20,6 +20,7 @@ namespace GUI
         private void Form1_Load(object sender, EventArgs e)
         {
             lblDate.Text = DateTime.Now.ToShortDateString();
+            Engine Start = new Engine();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

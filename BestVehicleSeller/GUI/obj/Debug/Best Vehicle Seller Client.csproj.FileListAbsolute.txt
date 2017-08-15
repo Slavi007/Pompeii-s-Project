@@ -1,0 +1,14 @@
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\bin\Debug\Best Vehicle Seller Client.exe.config
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\bin\Debug\Best Vehicle Seller Client.exe
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\bin\Debug\Best Vehicle Seller Client.pdb
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\bin\Debug\VehicleShop.exe
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\bin\Debug\VehicleShop.pdb
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.csprojResolveAssemblyReference.cache
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.frmAdd.resources
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.Form1.resources
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.frmSell.resources
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\GUI.frmTunning.resources
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.csproj.GenerateResource.Cache
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.exe
+C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\GUI\obj\Debug\Best Vehicle Seller Client.pdb

@@ -4,7 +4,7 @@
 
     public interface IManufacturing
     {
-        string CarMaker { get; }
-        Brand Brand { get; }
+        string CarModel { get; }
+        string Brand { get; }
     }
 }

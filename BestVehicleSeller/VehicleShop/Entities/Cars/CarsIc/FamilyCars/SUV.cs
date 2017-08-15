@@ -5,7 +5,7 @@
 
     public class SUV : FamilyCar
     {
-        public SUV(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) 
+        public SUV(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) 
             : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
         {
         }

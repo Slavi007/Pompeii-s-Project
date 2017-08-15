@@ -16,7 +16,7 @@
         public FuelType Fuel { get; private set; }
         public double FuelConsuption { get; private set; }
 
-        public Motorcycle(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour)
+        public Motorcycle(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour)
             : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
         {
         }

@@ -62,6 +62,7 @@
     <Compile Include="Entities\Motorcycles\StreetSport.cs" />
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Enums\Brand.cs" />
+    <Compile Include="Enums\BrandMotorcycle.cs" />
     <Compile Include="Enums\FuelType.cs" />
     <Compile Include="Interfaces\ModEquipment\IBodyKit.cs" />
     <Compile Include="Interfaces\ModPrice\IDevaluation.cs" />
@@ -86,6 +87,7 @@
     <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagram3.cd" />
     <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources.Extras\" />
