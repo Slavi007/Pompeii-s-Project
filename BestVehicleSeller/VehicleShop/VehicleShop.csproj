@@ -55,7 +55,7 @@
     <Compile Include="Entities\Cars\CarsElectric\CityCarElectric.cs" />
     <Compile Include="Entities\Cars\CarsIc\FamilyCar.cs" />
     <Compile Include="Entities\Cars\CarsIc\LuxuryCar.cs" />
-    <Compile Include="Entities\Cars\CarsIc\FamilyCars\SUV.cs" />
+    <Compile Include="Entities\Cars\CarsIc\FamilyCars\Suv.cs" />
     <Compile Include="Entities\Motorcycle.cs" />
     <Compile Include="Entities\Cars\CarsIc\OffRoaders.cs" />
     <Compile Include="Entities\Cars\CarsIc\SportCars\Roadster.cs" />
