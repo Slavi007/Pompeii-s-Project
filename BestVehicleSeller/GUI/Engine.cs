@@ -28,6 +28,7 @@ namespace GUI
 
 
         public void AddCar(string type, string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string color)
+
         {
             if (type == "CityCarElectric")
             {
@@ -51,7 +52,7 @@ namespace GUI
             }
             else if (type == "SUV")
             {
-                this.Cars.Add(new SUV(carMaker, brand, maxSpeed, acceleration, originDate, price, color));
+                this.Cars.Add(new Suv(carMaker, brand, maxSpeed, acceleration, originDate, price, color));
             }
             else if (type == "Wagon")
             {

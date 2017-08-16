@@ -7,6 +7,6 @@
         Kerosine,
         Ethanol,
         Lpg,
-        Cng,
+        Cng
     }
 }

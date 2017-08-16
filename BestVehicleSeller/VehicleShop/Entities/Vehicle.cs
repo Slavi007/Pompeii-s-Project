@@ -15,8 +15,10 @@
         {
             this.CarModel = carMaker;
             this.Brand = brand;
+
             this.MaxSpeed = maxSpeed;
             this.Acceleration = acceleration;
+
             this.OriginDate = originDate;
             this.Price = price;
             this.CustomPrice = price;

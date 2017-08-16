@@ -9,17 +9,23 @@
 
     public abstract class CarElectric : Car, IElectrical, IEspeciallyTaxable, IPromoteable
     {
-        public int BatteryCapacity { get; }
-        public double MotorPower { get; }
-        public int Range { get; }
 
-        public CarElectric(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour)
-            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
+        protected CarElectric(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour, int doors, int seats, int bootCapacity, int batteryCapacity, double motorPower, int range) 
+            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour, doors, seats, bootCapacity)
         {
+            this.BatteryCapacity = batteryCapacity;
+            this.MotorPower = motorPower;
+            this.Range = range;
+
             this.IsSpecialTaxApplied = false;
             this.IsPromotionApplied = false;
             this.ApplySpecialTax();
         }
+
+
+        public int BatteryCapacity { get; }
+        public double MotorPower { get; }
+        public int Range { get; }
 
 
         public bool IsSpecialTaxApplied { get; private set; }
@@ -66,5 +72,6 @@
             this.CustomPrice += this.Price * PriceNumbers.PromotionCarElectric / 100;
             this.IsPromotionApplied = false;
         }
+
     }
 }

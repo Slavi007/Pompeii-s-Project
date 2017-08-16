@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Utilities.cs" />
     <Compile Include="Core\IO\ConsoleReader.cs" />
     <Compile Include="Core\IO\ConsoleWriter.cs" />
     <Compile Include="Core\IO\FileReader.cs" />

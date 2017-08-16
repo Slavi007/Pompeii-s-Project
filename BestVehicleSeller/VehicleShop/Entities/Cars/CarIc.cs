@@ -6,20 +6,20 @@
 
     public abstract class CarIc : Car, IInternalCombustion
     {
-
-        public CarIc(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate,
-            decimal price, string colour, double enginePower, int engineVolume, int valveNumber, FuelType fuel, double fuelConsumption)
-            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
+        protected CarIc(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour,
+                        int doors, int seats, int bootCapacity, 
+                        double enginePower, int engineVolume, int valveNumber, string fuelAsString, double fuelConsumption) 
+            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour, doors, seats, bootCapacity)
         {
             this.EnginePower = enginePower;
             this.EngineVolume = engineVolume;
             this.ValveNumber = valveNumber;
-            this.Fuel = fuel;
+            this.Fuel = (FuelType)Enum.Parse(typeof(FuelType), fuelAsString);
             this.FuelConsuption = fuelConsumption;
         }
-        
+
         public double EnginePower { get; protected set; }
-        public int EngineVolume { get; private set; }
+        public int EngineVolume { get; }
         public int ValveNumber { get; }
         public FuelType Fuel { get; }
         public double FuelConsuption { get; protected set; }
