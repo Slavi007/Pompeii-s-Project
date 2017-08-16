@@ -4,6 +4,7 @@
     {
         None,
         AlfaRomeo,
+        Aprilia,
         Audi,
         BMW,
         Bentley,
@@ -11,13 +12,16 @@
         Citroen,
         Dacia,
         Dodge,
+        Ducati,
         Ferrari,
         Fiat,
         Ford,
+        HarleyDavidson,
         Honda,
         Hyundai,
         Infinity,
         Jaguar,
+        Kawasaki,
         Lamborghini,
         Lexus,
         Maserati,
@@ -32,7 +36,10 @@
         Seat,
         Skoda,
         Subaru,
+        Suzuki,
         Toyota,
+        Vespa,
         VW,
+        Yamaha
     }
 }

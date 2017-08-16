@@ -2,6 +2,9 @@
 {
     public enum BrandMotorcycle
     {
+        // I think this will unnecessarily complicate things
+        // I Copied all the marks in the other enum
+
       None,
       Aprilia,
       BMW,
@@ -11,6 +14,6 @@
       Kawasaki,
       Suzuki,
       Vespa,
-      Yamaha,
+      Yamaha
     }
 }

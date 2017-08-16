@@ -9,20 +9,26 @@
 
     public class Motorcycle : Vehicle, IInternalCombustion, IPromoteable, ITuningable
     {
+        public Motorcycle(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour, double enginePower, int engineVolume, int valveNumber, string fuelAsString, double fuelConsuption)
+            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
+        {
+            this.EnginePower = enginePower;
+            this.EngineVolume = engineVolume;
+            this.ValveNumber = valveNumber;
+            this.Fuel = (FuelType) Enum.Parse(typeof(FuelType), fuelAsString);
+            this.FuelConsuption = fuelConsuption;
+
+            this.IsTuningApplied = false;
+            this.IsPromotionApplied = false;
+        }
+
 
         public double EnginePower { get; private set; }
         public int EngineVolume { get; private set; }
         public int ValveNumber { get; private set; }
         public FuelType Fuel { get; private set; }
         public double FuelConsuption { get; private set; }
-
-        public Motorcycle(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour)
-            : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
-        {
-            this.IsTuningApplied = false;
-            this.IsPromotionApplied = false;
-        }
-
+        
 
         public bool IsPromotionApplied { get; private set; }
 

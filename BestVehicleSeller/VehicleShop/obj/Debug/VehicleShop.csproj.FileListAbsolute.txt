@@ -1,6 +1,0 @@
-C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe.config
-C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe
-C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.pdb
-C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.csprojResolveAssemblyReference.cache
-C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.exe
-C:\Users\bachito po malko ot3\Desktop\Pompeii's Project\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.pdb
