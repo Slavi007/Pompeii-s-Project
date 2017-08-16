@@ -8,6 +8,7 @@
         public const decimal PromotionSportCar = 20;    // in %
 
         public const decimal SpecialTaxElectroCar = 10;  // in %
+        public const decimal SpecialTaxLuxuryCar = 20;  // in %
 
     }
 }

@@ -1,3 +1,6 @@
+Tuning;2000.00
+Extend;1100.00
+BodyKit;800.00
 Rollbar;835.00
 Dark glasses;313.00
 17" Rims;800.00

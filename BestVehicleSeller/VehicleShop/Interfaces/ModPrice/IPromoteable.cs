@@ -5,8 +5,9 @@
         // Promotional reduce the Price
         // For Example :
         // -10%,
+        bool IsPromotionApplied { get; }
         void ApplyPromotion();
-        void DetachPromotion();
+        void CancelPromotion();
 
     }
 }

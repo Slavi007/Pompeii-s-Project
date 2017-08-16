@@ -6,8 +6,9 @@
         // MotorPower += 13%
         // Acceleration -= 10%
         // FuelConsumption =+15%
-        void ApplyTuning();
+        bool IsTuningApplied { get; }
 
-        void DetachTuning();
+        void ApplyTuning();
+        void CancelTuning();
     }
 }

@@ -2,8 +2,10 @@
 {
     public interface IBodyKit
     {
+        bool IsBodyKitApplied { get; }
+
         void ApplyBodyKit();
-        void DetachBodyKit();
+        void CancelBodyKit();
 
     }
 }

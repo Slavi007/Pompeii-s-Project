@@ -16,26 +16,55 @@
         public CarElectric(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour)
             : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
         {
+            this.IsSpecialTaxApplied = false;
+            this.IsPromotionApplied = false;
+            this.ApplySpecialTax();
         }
+
+
+        public bool IsSpecialTaxApplied { get; private set; }
 
         public void ApplySpecialTax()
         {
-            this.CustomPrice -= base.Price * PriceNumbers.SpecialTaxElectroCar / 100;
+            if (this.IsSpecialTaxApplied)
+            {
+                throw new InvalidOperationException($"The special discount of {this.GetType().Name} has already been applied");
+            }
+            this.CustomPrice -= this.Price * PriceNumbers.SpecialTaxElectroCar / 100;
+            this.IsSpecialTaxApplied = true;
         }
 
-        public void DetachSpecialTax()
+        public void CancelSpecialTax()
         {
-            this.CustomPrice += base.Price * PriceNumbers.SpecialTaxElectroCar / 100;
+            if (!this.IsSpecialTaxApplied)
+            {
+                throw new InvalidOperationException($"The special discount of {this.GetType().Name} has already been canceled");
+            }
+            this.CustomPrice += this.Price * PriceNumbers.SpecialTaxElectroCar / 100;
+            this.IsSpecialTaxApplied = false;
         }
+
+
+        public bool IsPromotionApplied { get; private set; }
 
         public void ApplyPromotion()
         {
-            this.CustomPrice -= base.Price * PriceNumbers.PromotionCarElectric / 100;
+            if (!this.IsPromotionApplied)
+            {
+                throw new InvalidOperationException($"The promotion of {this.GetType().Name} has already been canceled");
+            }
+            this.CustomPrice -= this.Price * PriceNumbers.PromotionCarElectric / 100;
+            this.IsPromotionApplied = true;
         }
 
-        public void DetachPromotion()
+        public void CancelPromotion()
         {
-            this.CustomPrice += base.Price * PriceNumbers.PromotionCarElectric / 100;
+            if (!this.IsPromotionApplied)
+            {
+                throw new InvalidOperationException($"The promotion of {this.GetType().Name} has already been canceled");
+            }
+            this.CustomPrice += this.Price * PriceNumbers.PromotionCarElectric / 100;
+            this.IsPromotionApplied = false;
         }
     }
 }
