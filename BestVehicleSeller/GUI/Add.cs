@@ -79,7 +79,7 @@ namespace GUI
                       
         public void SetMotorValues()
         {
-            cmbBrand.DataSource = Enum.GetValues(typeof(BrandMotorcycle));
+            cmbBrand.DataSource = Enum.GetValues(typeof(Brand));
             lblbrand.Visible = true;
             lblmodel.Visible = true;
             cmbBrand.Visible = true;

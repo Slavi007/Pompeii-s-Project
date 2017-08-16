@@ -19,13 +19,11 @@ namespace GUI
     {
         public Engine()
         {
-            this.Cars = new List<CarIc>();
-            this.CarsElectric = new List<CarElectric>();
+            this.Cars = new List<Car>();
             this.Motors = new List<Motorcycle>();
         }
 
-        private List<CarIc> Cars;
-        private List<CarElectric> CarsElectric;
+        private List<Car> Cars;
         private List<Motorcycle> Motors;
 
         public void AddElectricCar(string type, string carMaker, string brand, double maxSpeed, double acceleration,
@@ -35,12 +33,12 @@ namespace GUI
         {
             if (type == "CityCarElectric")
             {
-                this.CarsElectric.Add(new CityCarElectric(carMaker, brand, maxSpeed, acceleration, originDate, price, colour,
+                this.Cars.Add(new CityCarElectric(carMaker, brand, maxSpeed, acceleration, originDate, price, colour,
                     doors, seats, bootCapacity, batteryCapacity, motorPower, range));
             }
             else if (type == "CruiseCarElectric")
             {
-                this.CarsElectric.Add(new CruiseCarElectric(carMaker, brand, maxSpeed, acceleration, originDate, price, colour,
+                this.Cars.Add(new CruiseCarElectric(carMaker, brand, maxSpeed, acceleration, originDate, price, colour,
                     doors, seats, bootCapacity, batteryCapacity, motorPower, range));
             }
         }
