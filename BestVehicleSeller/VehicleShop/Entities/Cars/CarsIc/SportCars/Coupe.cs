@@ -8,7 +8,7 @@
 
     public class Coupe : SportCar, IPromoteable, IDevaluation
     {
-        public Coupe(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour, double enginePower, int engineVolume, int valveNumber, FuelType fuel, double fuelConsumption) 
+        public Coupe(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour, double enginePower, int engineVolume, int valveNumber, FuelType fuel, double fuelConsumption) 
             : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour, enginePower, engineVolume, valveNumber, fuel, fuelConsumption)
         {
             this.IsPromotionApplied = false;
@@ -54,11 +54,8 @@
             this.IsDevaluationApplied = true;
         }
 
-<<<<<<< HEAD
-        public Coupe(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
-=======
+
         public void CancelDevaluation()
->>>>>>> 3656e02e95f28986cc7ef9fa7eeaad3bd39c3252
         {
             throw new InvalidOperationException($"The Devaluation of {this.GetType().Name} cannot be canceled");
         }

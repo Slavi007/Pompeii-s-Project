@@ -9,7 +9,7 @@
 
     public class OffRoaders : CarIc, IExtendable, IPromoteable, ITuningable
     {
-        public OffRoaders(string carMaker, Brand brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour, double enginePower, int engineVolume, int valveNumber, FuelType fuel, double fuelConsumption)
+        public OffRoaders(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour, double enginePower, int engineVolume, int valveNumber, FuelType fuel, double fuelConsumption)
             : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour, enginePower, engineVolume, valveNumber, fuel, fuelConsumption)
         {
             this.IsTuningApplied = false;
@@ -78,11 +78,8 @@
             this.IsTuningApplied = true;
         }
 
-<<<<<<< HEAD
-        public OffRoaders(string carMaker, string brand, double maxSpeed, double acceleration, DateTime originDate, decimal price, string colour) : base(carMaker, brand, maxSpeed, acceleration, originDate, price, colour)
-=======
+
         public void CancelTuning()
->>>>>>> 3656e02e95f28986cc7ef9fa7eeaad3bd39c3252
         {
             if (!this.IsTuningApplied)
             {
