@@ -283,6 +283,14 @@ namespace GUI
                 decimal price = decimal.Parse(txtPrice.Text.ToString());
                 string color = txtColor.Text.ToString();
                 string type = "";
+                int doors = 1;
+                int seats = 1;
+                int boot = 1;
+                double enginePower=1;
+                int engineVolume=1;
+                int ValveNumber=1;
+                string Fuel="";
+                double Consumption = 1;
                 if (rbCar.Checked == true)
                 {
                     if (radioButton1.Checked == true)
@@ -324,7 +332,7 @@ namespace GUI
                             else type = "Roadster";
                         }
                     }
-                    Save.AddCar(type, model, brand, maxspeed, acc, date, price, color);
+                    Save.AddCar( type, model, brand, maxspeed, acc, date, price, color, doors, seats, boot, enginePower, engineVolume, ValveNumber, Fuel, Consumption);
                 }
                 else
                 {
@@ -337,7 +345,7 @@ namespace GUI
                         type = "Scooter";
                     }
                     else type = "StreetSport";
-                    Save.AddMotor(type, model, brand, maxspeed, acc, date, price, color);
+                    Save.AddMotor(type, model, brand, maxspeed, acc, date, price, color, enginePower, engineVolume, ValveNumber, Fuel, Consumption);
                 }
             }
                 
