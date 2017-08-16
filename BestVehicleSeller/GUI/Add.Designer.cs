@@ -56,14 +56,14 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.gbtype2 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.gbtype3 = new System.Windows.Forms.GroupBox();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.gbVehicle.SuspendLayout();
             this.gbType.SuspendLayout();
             this.gbtype2.SuspendLayout();
@@ -78,7 +78,7 @@
             this.btSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSave.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btSave.Location = new System.Drawing.Point(678, 444);
+            this.btSave.Location = new System.Drawing.Point(603, 606);
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(181, 93);
             this.btSave.TabIndex = 0;
@@ -94,7 +94,7 @@
             this.btCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCancel.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btCancel.Location = new System.Drawing.Point(678, 600);
+            this.btCancel.Location = new System.Drawing.Point(802, 606);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(181, 93);
             this.btCancel.TabIndex = 1;
@@ -305,7 +305,7 @@
             this.lblprice.BackColor = System.Drawing.Color.Transparent;
             this.lblprice.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblprice.ForeColor = System.Drawing.Color.Red;
-            this.lblprice.Location = new System.Drawing.Point(510, 353);
+            this.lblprice.Location = new System.Drawing.Point(617, 529);
             this.lblprice.Name = "lblprice";
             this.lblprice.Size = new System.Drawing.Size(140, 49);
             this.lblprice.TabIndex = 18;
@@ -314,7 +314,7 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(648, 375);
+            this.txtPrice.Location = new System.Drawing.Point(755, 551);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(136, 20);
             this.txtPrice.TabIndex = 19;
@@ -326,7 +326,7 @@
             this.lblcurrency.BackColor = System.Drawing.Color.Transparent;
             this.lblcurrency.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblcurrency.ForeColor = System.Drawing.Color.Red;
-            this.lblcurrency.Location = new System.Drawing.Point(789, 369);
+            this.lblcurrency.Location = new System.Drawing.Point(896, 545);
             this.lblcurrency.Name = "lblcurrency";
             this.lblcurrency.Size = new System.Drawing.Size(57, 30);
             this.lblcurrency.TabIndex = 20;
@@ -405,31 +405,18 @@
             this.gbtype2.Text = "What type of electric car do you want to add?";
             this.gbtype2.Visible = false;
             // 
-            // radioButton4
+            // radioButton7
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(17, 65);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(91, 34);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Urban";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.Visible = false;
-            this.radioButton4.Click += new System.EventHandler(this.radioButton4_Click);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(17, 105);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(103, 34);
-            this.radioButton5.TabIndex = 1;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Cruiser";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.Visible = false;
-            this.radioButton5.Click += new System.EventHandler(this.radioButton5_Click);
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(244, 109);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(88, 34);
+            this.radioButton7.TabIndex = 3;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Sport";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.Visible = false;
+            this.radioButton7.Click += new System.EventHandler(this.radioButton7_Click);
             // 
             // radioButton6
             // 
@@ -444,18 +431,31 @@
             this.radioButton6.Visible = false;
             this.radioButton6.Click += new System.EventHandler(this.radioButton6_Click);
             // 
-            // radioButton7
+            // radioButton5
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(244, 109);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(88, 34);
-            this.radioButton7.TabIndex = 3;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Sport";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.Visible = false;
-            this.radioButton7.Click += new System.EventHandler(this.radioButton7_Click);
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(17, 105);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(103, 34);
+            this.radioButton5.TabIndex = 1;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Cruiser";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.Visible = false;
+            this.radioButton5.Click += new System.EventHandler(this.radioButton5_Click);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(17, 65);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(91, 34);
+            this.radioButton4.TabIndex = 0;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Urban";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.Visible = false;
+            this.radioButton4.Click += new System.EventHandler(this.radioButton4_Click);
             // 
             // gbtype3
             // 
@@ -473,18 +473,18 @@
             this.gbtype3.Text = "What type of Family car do you want to add?";
             this.gbtype3.Visible = false;
             // 
-            // radioButton8
+            // radioButton10
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(17, 65);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(93, 34);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Sedan";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            this.radioButton8.Visible = false;
-            this.radioButton8.Click += new System.EventHandler(this.radioButton8_Click);
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(17, 138);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(98, 34);
+            this.radioButton10.TabIndex = 2;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Wagon";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.Visible = false;
+            this.radioButton10.Click += new System.EventHandler(this.radioButton10_Click);
             // 
             // radioButton9
             // 
@@ -499,18 +499,18 @@
             this.radioButton9.Visible = false;
             this.radioButton9.Click += new System.EventHandler(this.radioButton9_Click);
             // 
-            // radioButton10
+            // radioButton8
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(17, 138);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(98, 34);
-            this.radioButton10.TabIndex = 2;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Wagon";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            this.radioButton10.Visible = false;
-            this.radioButton10.Click += new System.EventHandler(this.radioButton10_Click);
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(17, 65);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(93, 34);
+            this.radioButton8.TabIndex = 0;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Sedan";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.Visible = false;
+            this.radioButton8.Click += new System.EventHandler(this.radioButton8_Click);
             // 
             // frmAdd
             // 

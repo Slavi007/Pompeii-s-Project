@@ -282,6 +282,7 @@ namespace GUI
                 DateTime date = dtpDate.Value.Date;
                 decimal price = decimal.Parse(txtPrice.Text.ToString());
                 string color = txtColor.Text.ToString();
+
                 string type = "";
                 if (rbCar.Checked == true)
                 {
