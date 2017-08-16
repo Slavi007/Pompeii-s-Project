@@ -4,3 +4,9 @@ D:\New folder\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleS
 D:\New folder\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.csprojResolveAssemblyReference.cache
 D:\New folder\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.exe
 D:\New folder\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.pdb
+C:\Users\rado_\Desktop\CarSeller\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe.config
+C:\Users\rado_\Desktop\CarSeller\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.exe
+C:\Users\rado_\Desktop\CarSeller\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.pdb
+C:\Users\rado_\Desktop\CarSeller\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.exe
+C:\Users\rado_\Desktop\CarSeller\Pompeii-s-Project\BestVehicleSeller\VehicleShop\bin\Debug\VehicleShop.pdb
+C:\Users\rado_\Desktop\CarSeller\Pompeii-s-Project\BestVehicleSeller\VehicleShop\obj\Debug\VehicleShop.csprojResolveAssemblyReference.cache

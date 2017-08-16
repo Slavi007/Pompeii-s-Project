@@ -58,6 +58,7 @@
     <Compile Include="Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomException.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
