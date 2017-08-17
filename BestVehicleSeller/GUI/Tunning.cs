@@ -36,5 +36,26 @@ namespace GUI
         {
             // Event for tunning goes here : 
         }
+
+        private void rbMotor_Click(object sender, EventArgs e)
+        {
+            cmbVehicle.DataSource = Global.Param.SellMotorValues();
+            lbltext.Text = "Select which Motorcycle do you want to sell?";
+            cmbVehicle.Visible = true;
+            lbltext.Visible = true;
+        }
+
+        private void rbCar_Click(object sender, EventArgs e)
+        {
+            cmbVehicle.DataSource = Global.Param.SellCarValues();
+            lbltext.Text = "Select which Car do you want to sell?";
+            cmbVehicle.Visible = true;
+            lbltext.Visible = true;
+        }
+
+        private void cmbVehicle_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
     }
 }

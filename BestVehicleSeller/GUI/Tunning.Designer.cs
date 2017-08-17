@@ -32,9 +32,11 @@
             this.btSave = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmbVehicle = new System.Windows.Forms.ComboBox();
+            this.lbltext = new System.Windows.Forms.Label();
+            this.gpQuestion = new System.Windows.Forms.GroupBox();
             this.rbCar = new System.Windows.Forms.RadioButton();
             this.rbMotor = new System.Windows.Forms.RadioButton();
-            this.gpQuestion = new System.Windows.Forms.GroupBox();
             this.gpQuestion.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +86,43 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cmbVehicle
+            // 
+            this.cmbVehicle.FormattingEnabled = true;
+            this.cmbVehicle.Location = new System.Drawing.Point(187, 207);
+            this.cmbVehicle.Name = "cmbVehicle";
+            this.cmbVehicle.Size = new System.Drawing.Size(298, 21);
+            this.cmbVehicle.TabIndex = 9;
+            this.cmbVehicle.Visible = false;
+            this.cmbVehicle.SelectionChangeCommitted += new System.EventHandler(this.cmbVehicle_SelectionChangeCommitted);
+            // 
+            // lbltext
+            // 
+            this.lbltext.AutoSize = true;
+            this.lbltext.BackColor = System.Drawing.Color.Transparent;
+            this.lbltext.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbltext.ForeColor = System.Drawing.Color.Red;
+            this.lbltext.Location = new System.Drawing.Point(44, 156);
+            this.lbltext.Name = "lbltext";
+            this.lbltext.Size = new System.Drawing.Size(93, 38);
+            this.lbltext.TabIndex = 8;
+            this.lbltext.Text = "label1";
+            this.lbltext.Visible = false;
+            // 
+            // gpQuestion
+            // 
+            this.gpQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.gpQuestion.Controls.Add(this.rbCar);
+            this.gpQuestion.Controls.Add(this.rbMotor);
+            this.gpQuestion.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gpQuestion.ForeColor = System.Drawing.Color.Red;
+            this.gpQuestion.Location = new System.Drawing.Point(107, 26);
+            this.gpQuestion.Name = "gpQuestion";
+            this.gpQuestion.Size = new System.Drawing.Size(465, 99);
+            this.gpQuestion.TabIndex = 7;
+            this.gpQuestion.TabStop = false;
+            this.gpQuestion.Text = "What vehicle do you want to sell?";
+            // 
             // rbCar
             // 
             this.rbCar.AutoSize = true;
@@ -96,7 +135,7 @@
             this.rbCar.TabStop = true;
             this.rbCar.Text = "Car";
             this.rbCar.UseVisualStyleBackColor = true;
-            this.rbCar.CheckedChanged += new System.EventHandler(this.rbCar_CheckedChanged);
+            this.rbCar.Click += new System.EventHandler(this.rbCar_Click);
             // 
             // rbMotor
             // 
@@ -110,21 +149,7 @@
             this.rbMotor.TabStop = true;
             this.rbMotor.Text = "Motorcycle";
             this.rbMotor.UseVisualStyleBackColor = true;
-            // 
-            // gpQuestion
-            // 
-            this.gpQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.gpQuestion.Controls.Add(this.rbCar);
-            this.gpQuestion.Controls.Add(this.rbMotor);
-            this.gpQuestion.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gpQuestion.ForeColor = System.Drawing.Color.Red;
-            this.gpQuestion.Location = new System.Drawing.Point(112, 25);
-            this.gpQuestion.Name = "gpQuestion";
-            this.gpQuestion.Size = new System.Drawing.Size(465, 99);
-            this.gpQuestion.TabIndex = 4;
-            this.gpQuestion.TabStop = false;
-            this.gpQuestion.Text = "What vehicle do you want to upgrade?";
-            this.gpQuestion.Enter += new System.EventHandler(this.gpQuestion_Enter);
+            this.rbMotor.Click += new System.EventHandler(this.rbMotor_Click);
             // 
             // frmTunning
             // 
@@ -134,6 +159,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(684, 661);
             this.ControlBox = false;
+            this.Controls.Add(this.cmbVehicle);
+            this.Controls.Add(this.lbltext);
             this.Controls.Add(this.gpQuestion);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btCancel);
@@ -145,6 +172,7 @@
             this.gpQuestion.ResumeLayout(false);
             this.gpQuestion.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,8 +181,10 @@
         private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbVehicle;
+        private System.Windows.Forms.Label lbltext;
+        private System.Windows.Forms.GroupBox gpQuestion;
         private System.Windows.Forms.RadioButton rbCar;
         private System.Windows.Forms.RadioButton rbMotor;
-        private System.Windows.Forms.GroupBox gpQuestion;
     }
 }
