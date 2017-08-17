@@ -96,5 +96,34 @@ namespace GUI
         {
             return this.Cars.Count.ToString();
         }
+
+        public string PrintMotor()
+        {
+            return  this.Motors.Count.ToString();
+        }
+
+        public List<string> SellCarValues()
+        {
+            List<string> values = new List<string>();
+            foreach (var item in this.Cars)
+            {
+                values.Add($"{item.Brand}, {item.CarModel}, {item.OriginDate.Year}");
+            }
+            return values;
+        }
+
+        public List<string> SellMotorValues()
+        {
+            List<string> values = new List<string>();
+            foreach (var item in this.Motors)
+            {
+                values.Add($"{item.Brand}, {item.CarModel}, {item.OriginDate.Year}");
+            }
+            return values;
+        }
+
+        public void DeleteMotor(int n)
+        {
+        }
     }
 }

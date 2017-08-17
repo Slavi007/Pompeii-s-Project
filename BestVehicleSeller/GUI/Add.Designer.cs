@@ -64,6 +64,22 @@
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.txtPower = new System.Windows.Forms.TextBox();
+            this.txtVolume = new System.Windows.Forms.TextBox();
+            this.txtValves = new System.Windows.Forms.TextBox();
+            this.lblpower = new System.Windows.Forms.Label();
+            this.lblvolume = new System.Windows.Forms.Label();
+            this.lblvalve = new System.Windows.Forms.Label();
+            this.txtfuel = new System.Windows.Forms.TextBox();
+            this.txtconsumption = new System.Windows.Forms.TextBox();
+            this.lblfuel = new System.Windows.Forms.Label();
+            this.lblrazhod = new System.Windows.Forms.Label();
+            this.txtseats = new System.Windows.Forms.TextBox();
+            this.lblseats = new System.Windows.Forms.Label();
+            this.txtdoors = new System.Windows.Forms.TextBox();
+            this.txtboot = new System.Windows.Forms.TextBox();
+            this.lbldoors = new System.Windows.Forms.Label();
+            this.lblboot = new System.Windows.Forms.Label();
             this.gbVehicle.SuspendLayout();
             this.gbType.SuspendLayout();
             this.gbtype2.SuspendLayout();
@@ -78,12 +94,13 @@
             this.btSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSave.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btSave.Location = new System.Drawing.Point(603, 606);
+            this.btSave.Location = new System.Drawing.Point(483, 648);
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(181, 93);
             this.btSave.TabIndex = 0;
             this.btSave.Text = "Save";
             this.btSave.UseVisualStyleBackColor = false;
+            this.btSave.Visible = false;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btCancel
@@ -94,7 +111,7 @@
             this.btCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCancel.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btCancel.Location = new System.Drawing.Point(802, 606);
+            this.btCancel.Location = new System.Drawing.Point(873, 648);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(181, 93);
             this.btCancel.TabIndex = 1;
@@ -149,7 +166,7 @@
             // cmbBrand
             // 
             this.cmbBrand.FormattingEnabled = true;
-            this.cmbBrand.Location = new System.Drawing.Point(518, 62);
+            this.cmbBrand.Location = new System.Drawing.Point(518, 63);
             this.cmbBrand.Name = "cmbBrand";
             this.cmbBrand.Size = new System.Drawing.Size(186, 21);
             this.cmbBrand.TabIndex = 3;
@@ -159,11 +176,11 @@
             // 
             this.lblbrand.AutoSize = true;
             this.lblbrand.BackColor = System.Drawing.Color.Transparent;
-            this.lblbrand.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblbrand.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblbrand.ForeColor = System.Drawing.Color.Red;
-            this.lblbrand.Location = new System.Drawing.Point(511, 15);
+            this.lblbrand.Location = new System.Drawing.Point(511, 16);
             this.lblbrand.Name = "lblbrand";
-            this.lblbrand.Size = new System.Drawing.Size(125, 40);
+            this.lblbrand.Size = new System.Drawing.Size(118, 38);
             this.lblbrand.TabIndex = 5;
             this.lblbrand.Text = "*Brand:";
             this.lblbrand.Visible = false;
@@ -172,18 +189,18 @@
             // 
             this.lblmodel.AutoSize = true;
             this.lblmodel.BackColor = System.Drawing.Color.Transparent;
-            this.lblmodel.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblmodel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblmodel.ForeColor = System.Drawing.Color.Red;
-            this.lblmodel.Location = new System.Drawing.Point(777, 15);
+            this.lblmodel.Location = new System.Drawing.Point(777, 16);
             this.lblmodel.Name = "lblmodel";
-            this.lblmodel.Size = new System.Drawing.Size(127, 40);
+            this.lblmodel.Size = new System.Drawing.Size(106, 35);
             this.lblmodel.TabIndex = 6;
             this.lblmodel.Text = "*Model:";
             this.lblmodel.Visible = false;
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(783, 62);
+            this.txtModel.Location = new System.Drawing.Point(783, 63);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(200, 20);
             this.txtModel.TabIndex = 7;
@@ -193,11 +210,11 @@
             // 
             this.lblmaxspeed.AutoSize = true;
             this.lblmaxspeed.BackColor = System.Drawing.Color.Transparent;
-            this.lblmaxspeed.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold);
+            this.lblmaxspeed.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblmaxspeed.ForeColor = System.Drawing.Color.Red;
-            this.lblmaxspeed.Location = new System.Drawing.Point(511, 123);
+            this.lblmaxspeed.Location = new System.Drawing.Point(501, 109);
             this.lblmaxspeed.Name = "lblmaxspeed";
-            this.lblmaxspeed.Size = new System.Drawing.Size(202, 40);
+            this.lblmaxspeed.Size = new System.Drawing.Size(166, 35);
             this.lblmaxspeed.TabIndex = 8;
             this.lblmaxspeed.Text = "*Max Speed:";
             this.lblmaxspeed.Visible = false;
@@ -208,7 +225,7 @@
             this.lblacceleration.BackColor = System.Drawing.Color.Transparent;
             this.lblacceleration.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblacceleration.ForeColor = System.Drawing.Color.Red;
-            this.lblacceleration.Location = new System.Drawing.Point(777, 125);
+            this.lblacceleration.Location = new System.Drawing.Point(767, 111);
             this.lblacceleration.Name = "lblacceleration";
             this.lblacceleration.Size = new System.Drawing.Size(248, 70);
             this.lblacceleration.TabIndex = 9;
@@ -217,7 +234,7 @@
             // 
             // txtMaxSpeed
             // 
-            this.txtMaxSpeed.Location = new System.Drawing.Point(518, 181);
+            this.txtMaxSpeed.Location = new System.Drawing.Point(508, 167);
             this.txtMaxSpeed.Name = "txtMaxSpeed";
             this.txtMaxSpeed.Size = new System.Drawing.Size(116, 20);
             this.txtMaxSpeed.TabIndex = 10;
@@ -225,7 +242,7 @@
             // 
             // txtAcceleration
             // 
-            this.txtAcceleration.Location = new System.Drawing.Point(823, 204);
+            this.txtAcceleration.Location = new System.Drawing.Point(813, 190);
             this.txtAcceleration.Name = "txtAcceleration";
             this.txtAcceleration.Size = new System.Drawing.Size(91, 20);
             this.txtAcceleration.TabIndex = 11;
@@ -237,7 +254,7 @@
             this.lblspeedunit.BackColor = System.Drawing.Color.Transparent;
             this.lblspeedunit.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblspeedunit.ForeColor = System.Drawing.Color.Red;
-            this.lblspeedunit.Location = new System.Drawing.Point(640, 174);
+            this.lblspeedunit.Location = new System.Drawing.Point(630, 160);
             this.lblspeedunit.Name = "lblspeedunit";
             this.lblspeedunit.Size = new System.Drawing.Size(58, 27);
             this.lblspeedunit.TabIndex = 12;
@@ -250,7 +267,7 @@
             this.lblunit.BackColor = System.Drawing.Color.Transparent;
             this.lblunit.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblunit.ForeColor = System.Drawing.Color.Red;
-            this.lblunit.Location = new System.Drawing.Point(920, 195);
+            this.lblunit.Location = new System.Drawing.Point(910, 181);
             this.lblunit.Name = "lblunit";
             this.lblunit.Size = new System.Drawing.Size(46, 30);
             this.lblunit.TabIndex = 13;
@@ -261,11 +278,11 @@
             // 
             this.lblcolor.AutoSize = true;
             this.lblcolor.BackColor = System.Drawing.Color.Transparent;
-            this.lblcolor.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblcolor.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblcolor.ForeColor = System.Drawing.Color.Red;
-            this.lblcolor.Location = new System.Drawing.Point(511, 250);
+            this.lblcolor.Location = new System.Drawing.Point(515, 230);
             this.lblcolor.Name = "lblcolor";
-            this.lblcolor.Size = new System.Drawing.Size(115, 40);
+            this.lblcolor.Size = new System.Drawing.Size(98, 35);
             this.lblcolor.TabIndex = 14;
             this.lblcolor.Text = "*Color:";
             this.lblcolor.Visible = false;
@@ -274,18 +291,18 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.Transparent;
-            this.lbldate.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbldate.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbldate.ForeColor = System.Drawing.Color.Red;
-            this.lbldate.Location = new System.Drawing.Point(705, 250);
+            this.lbldate.Location = new System.Drawing.Point(709, 230);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(349, 40);
+            this.lbldate.Size = new System.Drawing.Size(286, 35);
             this.lbldate.TabIndex = 15;
             this.lbldate.Text = "Date of manufacturing:";
             this.lbldate.Visible = false;
             // 
             // txtColor
             // 
-            this.txtColor.Location = new System.Drawing.Point(514, 293);
+            this.txtColor.Location = new System.Drawing.Point(518, 273);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(116, 20);
             this.txtColor.TabIndex = 16;
@@ -293,7 +310,7 @@
             // 
             // dtpDate
             // 
-            this.dtpDate.Location = new System.Drawing.Point(766, 293);
+            this.dtpDate.Location = new System.Drawing.Point(770, 273);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(200, 20);
             this.dtpDate.TabIndex = 17;
@@ -305,7 +322,7 @@
             this.lblprice.BackColor = System.Drawing.Color.Transparent;
             this.lblprice.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblprice.ForeColor = System.Drawing.Color.Red;
-            this.lblprice.Location = new System.Drawing.Point(617, 529);
+            this.lblprice.Location = new System.Drawing.Point(586, 586);
             this.lblprice.Name = "lblprice";
             this.lblprice.Size = new System.Drawing.Size(140, 49);
             this.lblprice.TabIndex = 18;
@@ -314,7 +331,7 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(755, 551);
+            this.txtPrice.Location = new System.Drawing.Point(724, 608);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(136, 20);
             this.txtPrice.TabIndex = 19;
@@ -326,7 +343,7 @@
             this.lblcurrency.BackColor = System.Drawing.Color.Transparent;
             this.lblcurrency.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblcurrency.ForeColor = System.Drawing.Color.Red;
-            this.lblcurrency.Location = new System.Drawing.Point(896, 545);
+            this.lblcurrency.Location = new System.Drawing.Point(865, 602);
             this.lblcurrency.Name = "lblcurrency";
             this.lblcurrency.Size = new System.Drawing.Size(57, 30);
             this.lblcurrency.TabIndex = 20;
@@ -512,14 +529,198 @@
             this.radioButton8.Visible = false;
             this.radioButton8.Click += new System.EventHandler(this.radioButton8_Click);
             // 
+            // txtPower
+            // 
+            this.txtPower.Location = new System.Drawing.Point(515, 399);
+            this.txtPower.Name = "txtPower";
+            this.txtPower.Size = new System.Drawing.Size(116, 20);
+            this.txtPower.TabIndex = 24;
+            this.txtPower.Visible = false;
+            // 
+            // txtVolume
+            // 
+            this.txtVolume.Location = new System.Drawing.Point(713, 399);
+            this.txtVolume.Name = "txtVolume";
+            this.txtVolume.Size = new System.Drawing.Size(116, 20);
+            this.txtVolume.TabIndex = 25;
+            this.txtVolume.Visible = false;
+            // 
+            // txtValves
+            // 
+            this.txtValves.Location = new System.Drawing.Point(910, 399);
+            this.txtValves.Name = "txtValves";
+            this.txtValves.Size = new System.Drawing.Size(116, 20);
+            this.txtValves.TabIndex = 26;
+            this.txtValves.Visible = false;
+            // 
+            // lblpower
+            // 
+            this.lblpower.AutoSize = true;
+            this.lblpower.BackColor = System.Drawing.Color.Transparent;
+            this.lblpower.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblpower.ForeColor = System.Drawing.Color.Red;
+            this.lblpower.Location = new System.Drawing.Point(500, 358);
+            this.lblpower.Name = "lblpower";
+            this.lblpower.Size = new System.Drawing.Size(150, 30);
+            this.lblpower.TabIndex = 27;
+            this.lblpower.Text = "*Horsepower:";
+            this.lblpower.Visible = false;
+            // 
+            // lblvolume
+            // 
+            this.lblvolume.AutoSize = true;
+            this.lblvolume.BackColor = System.Drawing.Color.Transparent;
+            this.lblvolume.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblvolume.ForeColor = System.Drawing.Color.Red;
+            this.lblvolume.Location = new System.Drawing.Point(680, 320);
+            this.lblvolume.Name = "lblvolume";
+            this.lblvolume.Size = new System.Drawing.Size(202, 70);
+            this.lblvolume.TabIndex = 28;
+            this.lblvolume.Text = "*Engine Volume \r\nin cm3:";
+            this.lblvolume.Visible = false;
+            // 
+            // lblvalve
+            // 
+            this.lblvalve.AutoSize = true;
+            this.lblvalve.BackColor = System.Drawing.Color.Transparent;
+            this.lblvalve.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblvalve.ForeColor = System.Drawing.Color.Red;
+            this.lblvalve.Location = new System.Drawing.Point(885, 358);
+            this.lblvalve.Name = "lblvalve";
+            this.lblvalve.Size = new System.Drawing.Size(170, 30);
+            this.lblvalve.TabIndex = 29;
+            this.lblvalve.Text = "*Engine Valves:";
+            this.lblvalve.Visible = false;
+            // 
+            // txtfuel
+            // 
+            this.txtfuel.Location = new System.Drawing.Point(514, 490);
+            this.txtfuel.Name = "txtfuel";
+            this.txtfuel.Size = new System.Drawing.Size(116, 20);
+            this.txtfuel.TabIndex = 30;
+            this.txtfuel.Visible = false;
+            // 
+            // txtconsumption
+            // 
+            this.txtconsumption.Location = new System.Drawing.Point(710, 490);
+            this.txtconsumption.Name = "txtconsumption";
+            this.txtconsumption.Size = new System.Drawing.Size(116, 20);
+            this.txtconsumption.TabIndex = 31;
+            this.txtconsumption.Visible = false;
+            // 
+            // lblfuel
+            // 
+            this.lblfuel.AutoSize = true;
+            this.lblfuel.BackColor = System.Drawing.Color.Transparent;
+            this.lblfuel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblfuel.ForeColor = System.Drawing.Color.Red;
+            this.lblfuel.Location = new System.Drawing.Point(509, 448);
+            this.lblfuel.Name = "lblfuel";
+            this.lblfuel.Size = new System.Drawing.Size(129, 30);
+            this.lblfuel.TabIndex = 32;
+            this.lblfuel.Text = "*Fuel type:";
+            this.lblfuel.Visible = false;
+            // 
+            // lblrazhod
+            // 
+            this.lblrazhod.AutoSize = true;
+            this.lblrazhod.BackColor = System.Drawing.Color.Transparent;
+            this.lblrazhod.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblrazhod.ForeColor = System.Drawing.Color.Red;
+            this.lblrazhod.Location = new System.Drawing.Point(689, 450);
+            this.lblrazhod.Name = "lblrazhod";
+            this.lblrazhod.Size = new System.Drawing.Size(154, 30);
+            this.lblrazhod.TabIndex = 33;
+            this.lblrazhod.Text = "*Consumption:";
+            this.lblrazhod.Visible = false;
+            // 
+            // txtseats
+            // 
+            this.txtseats.Location = new System.Drawing.Point(976, 490);
+            this.txtseats.Name = "txtseats";
+            this.txtseats.Size = new System.Drawing.Size(60, 20);
+            this.txtseats.TabIndex = 34;
+            this.txtseats.Visible = false;
+            // 
+            // lblseats
+            // 
+            this.lblseats.AutoSize = true;
+            this.lblseats.BackColor = System.Drawing.Color.Transparent;
+            this.lblseats.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblseats.ForeColor = System.Drawing.Color.Red;
+            this.lblseats.Location = new System.Drawing.Point(879, 481);
+            this.lblseats.Name = "lblseats";
+            this.lblseats.Size = new System.Drawing.Size(92, 30);
+            this.lblseats.TabIndex = 35;
+            this.lblseats.Text = "*Seats:";
+            this.lblseats.Visible = false;
+            // 
+            // txtdoors
+            // 
+            this.txtdoors.Location = new System.Drawing.Point(643, 546);
+            this.txtdoors.Name = "txtdoors";
+            this.txtdoors.Size = new System.Drawing.Size(60, 20);
+            this.txtdoors.TabIndex = 36;
+            this.txtdoors.Visible = false;
+            // 
+            // txtboot
+            // 
+            this.txtboot.Location = new System.Drawing.Point(915, 553);
+            this.txtboot.Name = "txtboot";
+            this.txtboot.Size = new System.Drawing.Size(60, 20);
+            this.txtboot.TabIndex = 37;
+            this.txtboot.Visible = false;
+            // 
+            // lbldoors
+            // 
+            this.lbldoors.AutoSize = true;
+            this.lbldoors.BackColor = System.Drawing.Color.Transparent;
+            this.lbldoors.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbldoors.ForeColor = System.Drawing.Color.Red;
+            this.lbldoors.Location = new System.Drawing.Point(551, 537);
+            this.lbldoors.Name = "lbldoors";
+            this.lbldoors.Size = new System.Drawing.Size(90, 30);
+            this.lbldoors.TabIndex = 38;
+            this.lbldoors.Text = "*Doors:";
+            this.lbldoors.Visible = false;
+            // 
+            // lblboot
+            // 
+            this.lblboot.AutoSize = true;
+            this.lblboot.BackColor = System.Drawing.Color.Transparent;
+            this.lblboot.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblboot.ForeColor = System.Drawing.Color.Red;
+            this.lblboot.Location = new System.Drawing.Point(788, 546);
+            this.lblboot.Name = "lblboot";
+            this.lblboot.Size = new System.Drawing.Size(121, 30);
+            this.lblboot.TabIndex = 39;
+            this.lblboot.Text = "*Boot cap:";
+            this.lblboot.Visible = false;
+            // 
             // frmAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1069, 711);
+            this.ClientSize = new System.Drawing.Size(1069, 753);
             this.ControlBox = false;
+            this.Controls.Add(this.lblboot);
+            this.Controls.Add(this.lbldoors);
+            this.Controls.Add(this.txtboot);
+            this.Controls.Add(this.txtdoors);
+            this.Controls.Add(this.lblseats);
+            this.Controls.Add(this.txtseats);
+            this.Controls.Add(this.lblrazhod);
+            this.Controls.Add(this.lblfuel);
+            this.Controls.Add(this.txtconsumption);
+            this.Controls.Add(this.txtfuel);
+            this.Controls.Add(this.lblvalve);
+            this.Controls.Add(this.lblvolume);
+            this.Controls.Add(this.lblpower);
+            this.Controls.Add(this.txtValves);
+            this.Controls.Add(this.txtVolume);
+            this.Controls.Add(this.txtPower);
             this.Controls.Add(this.gbtype3);
             this.Controls.Add(this.gbtype2);
             this.Controls.Add(this.gbType);
@@ -598,5 +799,21 @@
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.TextBox txtPower;
+        private System.Windows.Forms.TextBox txtVolume;
+        private System.Windows.Forms.TextBox txtValves;
+        private System.Windows.Forms.Label lblpower;
+        private System.Windows.Forms.Label lblvolume;
+        private System.Windows.Forms.Label lblvalve;
+        private System.Windows.Forms.TextBox txtfuel;
+        private System.Windows.Forms.TextBox txtconsumption;
+        private System.Windows.Forms.Label lblfuel;
+        private System.Windows.Forms.Label lblrazhod;
+        private System.Windows.Forms.TextBox txtseats;
+        private System.Windows.Forms.Label lblseats;
+        private System.Windows.Forms.TextBox txtdoors;
+        private System.Windows.Forms.TextBox txtboot;
+        private System.Windows.Forms.Label lbldoors;
+        private System.Windows.Forms.Label lblboot;
     }
 }

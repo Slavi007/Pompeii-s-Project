@@ -8,6 +8,7 @@ using System.Net.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VehicleShop.Core;
 using VehicleShop.Enums;
 
 namespace GUI
@@ -75,8 +76,8 @@ namespace GUI
             radioButton5.Visible = false;
             radioButton6.Visible = false;
             radioButton7.Visible = false;
-        }       
-                      
+        }
+
         public void SetMotorValues()
         {
             cmbBrand.DataSource = Enum.GetValues(typeof(Brand));
@@ -97,6 +98,17 @@ namespace GUI
             lblprice.Visible = true;
             txtPrice.Visible = true;
             lblcurrency.Visible = true;
+            lblpower.Visible = true;
+            txtPower.Visible = true;
+            lblvolume.Visible = true;
+            txtVolume.Visible = true;
+            lblvalve.Visible = true;
+            txtValves.Visible = true;
+            lblfuel.Visible = true;
+            txtfuel.Visible = true;
+            lblrazhod.Visible = true;
+            txtconsumption.Visible = true;
+            btSave.Visible = true;
         }
 
         public void SetCarValues()
@@ -119,6 +131,23 @@ namespace GUI
             lblprice.Visible = true;
             txtPrice.Visible = true;
             lblcurrency.Visible = true;
+            lblpower.Visible = true;
+            txtPower.Visible = true;
+            lblvolume.Visible = true;
+            txtVolume.Visible = true;
+            lblvalve.Visible = true;
+            txtValves.Visible = true;
+            lblfuel.Visible = true;
+            txtfuel.Visible = true;
+            lblrazhod.Visible = true;
+            txtconsumption.Visible = true;
+            lblseats.Visible = true;
+            txtseats.Visible = true;
+            lbldoors.Visible = true;
+            txtdoors.Visible = true;
+            lblboot.Visible = true;
+            txtboot.Visible = true;
+            btSave.Visible = true;
         }
 
         public void RemoveValues()
@@ -140,6 +169,23 @@ namespace GUI
             lblprice.Visible = false;
             txtPrice.Visible = false;
             lblcurrency.Visible = false;
+            lblpower.Visible = false;
+            txtPower.Visible = false;
+            lblvolume.Visible = false;
+            txtVolume.Visible = false;
+            lblvalve.Visible = false;
+            txtValves.Visible = false;
+            lblfuel.Visible = false;
+            txtfuel.Visible = false;
+            lblrazhod.Visible = false;
+            txtconsumption.Visible = false;
+            lblseats.Visible = false;
+            txtseats.Visible = false;
+            lbldoors.Visible = false;
+            txtdoors.Visible = false;
+            lblboot.Visible = false;
+            txtboot.Visible = false;
+            btSave.Visible = false;
         }
 
         private void radioButton1_Click(object sender, EventArgs e)
@@ -265,92 +311,134 @@ namespace GUI
 
         private void btSave_Click(object sender, EventArgs e)
         {
-            if (cmbBrand.SelectedItem.ToString().Equals("None") || txtModel.Text.Length == 0 || txtMaxSpeed.Text.Length == 0 ||
-                txtAcceleration.Text.Length == 0 || txtColor.Text.Length == 0 || txtPrice.Text.Length == 0)
+            if (rbCar.Checked == true)
             {
-              MessageBox.Show("Please fill all mandatory fields starting with * ",
-                    "Error",
-                    MessageBoxButtons.OK);
+                if (cmbBrand.SelectedItem.ToString().Equals("None") || txtModel.Text.Length == 0 ||
+                    txtMaxSpeed.Text.Length == 0 ||
+                    txtAcceleration.Text.Length == 0 || txtColor.Text.Length == 0 || txtPrice.Text.Length == 0 ||
+                    txtPower.Text.Length == 0
+                    || txtVolume.Text.Length == 0 || txtValves.Text.Length == 0 || txtseats.Text.Length == 0 ||
+                    txtdoors.Text.Length == 0
+                    || txtboot.Text.Length == 0)
+                {
+                    CustomException.AddException();
+                }
+                else
+                {
+                    string type = "";
+                    string model = txtModel.Text;
+                    string brand = cmbBrand.SelectedItem.ToString();
+                    double maxspeed = double.Parse(txtMaxSpeed.Text.ToString());
+                    double acc = double.Parse(txtAcceleration.Text.ToString());
+                    DateTime date = dtpDate.Value.Date;
+                    decimal price = decimal.Parse(txtPrice.Text.ToString());
+                    string color = txtColor.Text;
+                    int doors = int.Parse(txtdoors.Text.ToString());
+                    int seats = int.Parse(txtseats.Text.ToString());
+                    int boot = int.Parse(txtboot.Text.ToString());
+                    double enginePower = double.Parse(txtPower.Text.ToString());
+                    int engineVolume = int.Parse(txtVolume.Text.ToString());
+                    int ValveNumber = int.Parse(txtValves.Text.ToString());
+                    string Fuel = txtfuel.Text;
+                    double Consumption = double.Parse(txtconsumption.Text.ToString());
+                    if (rbCar.Checked == true)
+                    {
+                        if (radioButton1.Checked == true)
+                        {
+                            if (radioButton4.Checked == true)
+                            {
+                                type = "CityCarElectric";
+                            }
+                            else type = "CruiseCarElectric";
+                        }
+                        if (radioButton2.Checked == true)
+                        {
+                            if (radioButton4.Checked == true)
+                            {
+                                type = "Luxury";
+                            }
+                            else if (radioButton5.Checked == true)
+                            {
+                                type = "Off-Roader";
+                            }
+                            else if (radioButton6.Checked == true)
+                            {
+                                if (radioButton8.Checked == true)
+                                {
+                                    type = "Sedan";
+                                }
+                                else if (radioButton9.Checked == true)
+                                {
+                                    type = "SUV";
+                                }
+                                else type = "Wagon";
+                            }
+                            else if (radioButton7.Checked == true)
+                            {
+                                if (radioButton8.Checked == true)
+                                {
+                                    type = "Coupe";
+                                }
+                                else type = "Roadster";
+                            }
+                        }
+                        Global.Param.AddCar(type, model, brand, maxspeed, acc, date, price, color, doors, seats, boot,
+                            enginePower, engineVolume, ValveNumber, Fuel, Consumption);
+                        MessageBox.Show($"The car is added succesfully! Cars:{Global.Param.PrintCar()}",
+                            "Success",
+                            MessageBoxButtons.OK);
+                        cmbBrand.SelectedIndex = cmbBrand.FindStringExact("None");
+                        txtModel.Text = "";
+                        txtMaxSpeed.Text = "";
+                        txtAcceleration.Text = "";
+                        txtColor.Text = "";
+                        txtPrice.Text = "";
+                        txtPower.Text = "";
+                        txtVolume.Text = "";
+                        txtValves.Text = "";
+                        txtfuel.Text = "";
+                        txtconsumption.Text = "";
+                        txtseats.Text = "";
+                        txtdoors.Text = "";
+                        txtboot.Text = "";
+                    }
+                }
+            }
+            else if (cmbBrand.SelectedItem.ToString().Equals("None") || txtModel.Text.Length == 0 ||
+                     txtMaxSpeed.Text.Length == 0 ||
+                     txtAcceleration.Text.Length == 0 || txtColor.Text.Length == 0 || txtPrice.Text.Length == 0 ||
+                     txtPower.Text.Length == 0
+                     || txtVolume.Text.Length == 0 || txtValves.Text.Length == 0)
+            {
+                CustomException.AddException();            
             }
             else
             {
-                Engine Save = new Engine();
-                string model = txtModel.Text.ToString();
+                string type = "";
+                string model = txtModel.Text;
                 string brand = cmbBrand.SelectedItem.ToString();
                 double maxspeed = double.Parse(txtMaxSpeed.Text.ToString());
                 double acc = double.Parse(txtAcceleration.Text.ToString());
                 DateTime date = dtpDate.Value.Date;
                 decimal price = decimal.Parse(txtPrice.Text.ToString());
-                string color = txtColor.Text.ToString();
-
-                string type = "";
-                int doors = 1;
-                int seats = 1;
-                int boot = 1;
-                double enginePower=1;
-                int engineVolume=1;
-                int ValveNumber=1;
-                string Fuel="";
-                double Consumption = 1;
-                if (rbCar.Checked == true)
+                string color = txtColor.Text;                
+                double enginePower = double.Parse(txtPower.Text.ToString());
+                int engineVolume = int.Parse(txtVolume.Text.ToString());
+                int ValveNumber = int.Parse(txtValves.Text.ToString());
+                string Fuel = txtfuel.Text;
+                double Consumption = double.Parse(txtconsumption.Text.ToString());
+                if (radioButton1.Checked == true)
                 {
-                    if (radioButton1.Checked == true)
-                    {
-                        if (radioButton4.Checked == true)
-                        {
-                            type = "CityCarElectric";
-                        }
-                        else type = "CruiseCarElectric";
-                    }
-                    if (radioButton2.Checked == true)
-                    {
-                        if (radioButton4.Checked == true)
-                        {
-                            type = "Luxury";
-                        }
-                        else if (radioButton5.Checked == true)
-                        {
-                            type = "Off-Roader";
-                        }
-                        else if (radioButton6.Checked == true)
-                        {
-                            if (radioButton8.Checked == true)
-                            {
-                                type = "Sedan";
-                            }
-                            else if (radioButton9.Checked == true)
-                            {
-                                type = "SUV";
-                            }
-                            else type = "Wagon";
-                        }
-                        else if (radioButton7.Checked == true)
-                        {
-                            if (radioButton8.Checked == true)
-                            {
-                                type = "Coupe";
-                            }
-                            else type = "Roadster";
-                        }
-                    }
-                    Save.AddCar( type, model, brand, maxspeed, acc, date, price, color, doors, seats, boot, enginePower, engineVolume, ValveNumber, Fuel, Consumption);
+                    type = "Cruiser";
                 }
-                else
+                else if (radioButton2.Checked == true)
                 {
-                    if (radioButton1.Checked == true)
-                    {
-                        type = "Cruiser";
-                    }
-                    else if (radioButton2.Checked == true)
-                    {
-                        type = "Scooter";
-                    }
-                    else type = "StreetSport";
-                    Save.AddMotor(type, model, brand, maxspeed, acc, date, price, color, enginePower, engineVolume, ValveNumber, Fuel, Consumption);
+                    type = "Scooter";
                 }
-            }
-                
-                MessageBox.Show("The vehicle is added succesfully",
+                else type = "StreetSport";
+                Global.Param.AddMotor(type, model, brand, maxspeed, acc, date, price, color, enginePower, engineVolume,
+                    ValveNumber, Fuel, Consumption);
+                MessageBox.Show($"The motorcycle is added succesfully! Motorcycles:{Global.Param.PrintMotor()}",
                     "Success",
                     MessageBoxButtons.OK);
                 cmbBrand.SelectedIndex = cmbBrand.FindStringExact("None");
@@ -359,6 +447,16 @@ namespace GUI
                 txtAcceleration.Text = "";
                 txtColor.Text = "";
                 txtPrice.Text = "";
+                txtPower.Text = "";
+                txtVolume.Text = "";
+                txtValves.Text = "";
+                txtseats.Text = "";
+                txtdoors.Text = "";
+                txtboot.Text = "";
+                txtfuel.Text = "";
+                txtconsumption.Text = "";
             }
-        }
-    }
+        }                            
+        
+     }
+}

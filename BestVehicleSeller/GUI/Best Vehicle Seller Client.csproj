@@ -36,7 +36,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>GUI.Program</StartupObject>
+    <StartupObject>GUI.Startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,7 +66,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sell.cs">
       <SubType>Form</SubType>
@@ -74,6 +74,7 @@
     <Compile Include="Sell.Designer.cs">
       <DependentUpon>Sell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Tunning.cs">
       <SubType>Form</SubType>
     </Compile>
