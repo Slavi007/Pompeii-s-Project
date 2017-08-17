@@ -114,16 +114,34 @@ namespace GUI
 
         public List<string> SellMotorValues()
         {
+            int i = 0;
             List<string> values = new List<string>();
             foreach (var item in this.Motors)
             {
-                values.Add($"{item.Brand}, {item.CarModel}, {item.OriginDate.Year}");
+                i++;
+                values.Add($"{i} - {item.Brand}, {item.CarModel}, {item.OriginDate.Year}");
             }
             return values;
         }
 
         public void DeleteMotor(int n)
         {
+            this.Motors.RemoveAt(n-1);
+        }
+
+        public void DeleteCar(int n)
+        {
+            this.Cars.RemoveAt(n-1);
+        }
+
+        public Motorcycle MotorValue(int n)
+        {
+         return this.Motors.ElementAt(n-1);
+        }
+
+        public Car CarValue(int n)
+        {
+            return this.Cars.ElementAt(n - 1);
         }
     }
 }

@@ -80,6 +80,7 @@
             this.txtboot = new System.Windows.Forms.TextBox();
             this.lbldoors = new System.Windows.Forms.Label();
             this.lblboot = new System.Windows.Forms.Label();
+            this.bthelp = new System.Windows.Forms.Button();
             this.gbVehicle.SuspendLayout();
             this.gbType.SuspendLayout();
             this.gbtype2.SuspendLayout();
@@ -594,9 +595,9 @@
             // 
             // txtfuel
             // 
-            this.txtfuel.Location = new System.Drawing.Point(514, 490);
+            this.txtfuel.Location = new System.Drawing.Point(564, 490);
             this.txtfuel.Name = "txtfuel";
-            this.txtfuel.Size = new System.Drawing.Size(116, 20);
+            this.txtfuel.Size = new System.Drawing.Size(74, 20);
             this.txtfuel.TabIndex = 30;
             this.txtfuel.Visible = false;
             // 
@@ -697,6 +698,21 @@
             this.lblboot.Text = "*Boot cap:";
             this.lblboot.Visible = false;
             // 
+            // bthelp
+            // 
+            this.bthelp.BackColor = System.Drawing.Color.Transparent;
+            this.bthelp.BackgroundImage = global::GUI.Properties.Resources.Button;
+            this.bthelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bthelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bthelp.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bthelp.Location = new System.Drawing.Point(504, 482);
+            this.bthelp.Name = "bthelp";
+            this.bthelp.Size = new System.Drawing.Size(54, 31);
+            this.bthelp.TabIndex = 40;
+            this.bthelp.Text = "Help";
+            this.bthelp.UseVisualStyleBackColor = false;
+            this.bthelp.Click += new System.EventHandler(this.bthelp_Click);
+            // 
             // frmAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -705,6 +721,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1069, 753);
             this.ControlBox = false;
+            this.Controls.Add(this.bthelp);
             this.Controls.Add(this.lblboot);
             this.Controls.Add(this.lbldoors);
             this.Controls.Add(this.txtboot);
@@ -815,5 +832,6 @@
         private System.Windows.Forms.TextBox txtboot;
         private System.Windows.Forms.Label lbldoors;
         private System.Windows.Forms.Label lblboot;
+        private System.Windows.Forms.Button bthelp;
     }
 }

@@ -34,10 +34,15 @@
             this.rbCar = new System.Windows.Forms.RadioButton();
             this.rbMotor = new System.Windows.Forms.RadioButton();
             this.gpQuestion = new System.Windows.Forms.GroupBox();
-            this.lblvehicle = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbltext = new System.Windows.Forms.Label();
+            this.lblmodel = new System.Windows.Forms.Label();
             this.cmbVehicle = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbldate = new System.Windows.Forms.Label();
+            this.lblprice = new System.Windows.Forms.Label();
+            this.lblmax = new System.Windows.Forms.Label();
+            this.lbltop = new System.Windows.Forms.Label();
+            this.lblcolor = new System.Windows.Forms.Label();
+            this.lblbrand = new System.Windows.Forms.Label();
             this.gpQuestion.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,53 +118,119 @@
             this.gpQuestion.TabStop = false;
             this.gpQuestion.Text = "What vehicle do you want to sell?";
             // 
-            // lblvehicle
+            // lbltext
             // 
-            this.lblvehicle.AutoSize = true;
-            this.lblvehicle.BackColor = System.Drawing.Color.Transparent;
-            this.lblvehicle.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblvehicle.ForeColor = System.Drawing.Color.Red;
-            this.lblvehicle.Location = new System.Drawing.Point(49, 177);
-            this.lblvehicle.Name = "lblvehicle";
-            this.lblvehicle.Size = new System.Drawing.Size(93, 38);
-            this.lblvehicle.TabIndex = 4;
-            this.lblvehicle.Text = "label1";
-            this.lblvehicle.Visible = false;
+            this.lbltext.AutoSize = true;
+            this.lbltext.BackColor = System.Drawing.Color.Transparent;
+            this.lbltext.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbltext.ForeColor = System.Drawing.Color.Red;
+            this.lbltext.Location = new System.Drawing.Point(57, 154);
+            this.lbltext.Name = "lbltext";
+            this.lbltext.Size = new System.Drawing.Size(93, 38);
+            this.lbltext.TabIndex = 4;
+            this.lbltext.Text = "label1";
+            this.lbltext.Visible = false;
             // 
-            // label2
+            // lblmodel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(138, 373);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 40);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
-            this.label2.Visible = false;
+            this.lblmodel.AutoSize = true;
+            this.lblmodel.BackColor = System.Drawing.Color.Transparent;
+            this.lblmodel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblmodel.ForeColor = System.Drawing.Color.Red;
+            this.lblmodel.Location = new System.Drawing.Point(244, 285);
+            this.lblmodel.Name = "lblmodel";
+            this.lblmodel.Size = new System.Drawing.Size(64, 27);
+            this.lblmodel.TabIndex = 5;
+            this.lblmodel.Text = "model";
+            this.lblmodel.Visible = false;
             // 
             // cmbVehicle
             // 
             this.cmbVehicle.FormattingEnabled = true;
-            this.cmbVehicle.Location = new System.Drawing.Point(183, 223);
+            this.cmbVehicle.Location = new System.Drawing.Point(183, 204);
             this.cmbVehicle.Name = "cmbVehicle";
             this.cmbVehicle.Size = new System.Drawing.Size(298, 21);
             this.cmbVehicle.TabIndex = 6;
             this.cmbVehicle.Visible = false;
+            this.cmbVehicle.SelectionChangeCommitted += new System.EventHandler(this.cmbVehicle_SelectionChangeCommitted);
             // 
-            // label3
+            // lbldate
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(408, 373);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 40);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
-            this.label3.Visible = false;
+            this.lbldate.AutoSize = true;
+            this.lbldate.BackColor = System.Drawing.Color.Transparent;
+            this.lbldate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbldate.ForeColor = System.Drawing.Color.Red;
+            this.lbldate.Location = new System.Drawing.Point(435, 285);
+            this.lbldate.Name = "lbldate";
+            this.lbldate.Size = new System.Drawing.Size(54, 27);
+            this.lbldate.TabIndex = 7;
+            this.lbldate.Text = "date";
+            this.lbldate.Visible = false;
+            // 
+            // lblprice
+            // 
+            this.lblprice.AutoSize = true;
+            this.lblprice.BackColor = System.Drawing.Color.Transparent;
+            this.lblprice.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblprice.ForeColor = System.Drawing.Color.Red;
+            this.lblprice.Location = new System.Drawing.Point(60, 464);
+            this.lblprice.Name = "lblprice";
+            this.lblprice.Size = new System.Drawing.Size(72, 35);
+            this.lblprice.TabIndex = 8;
+            this.lblprice.Text = "price";
+            this.lblprice.Visible = false;
+            // 
+            // lblmax
+            // 
+            this.lblmax.AutoSize = true;
+            this.lblmax.BackColor = System.Drawing.Color.Transparent;
+            this.lblmax.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblmax.ForeColor = System.Drawing.Color.Red;
+            this.lblmax.Location = new System.Drawing.Point(60, 377);
+            this.lblmax.Name = "lblmax";
+            this.lblmax.Size = new System.Drawing.Size(49, 27);
+            this.lblmax.TabIndex = 9;
+            this.lblmax.Text = "max";
+            this.lblmax.Visible = false;
+            // 
+            // lbltop
+            // 
+            this.lbltop.AutoSize = true;
+            this.lbltop.BackColor = System.Drawing.Color.Transparent;
+            this.lbltop.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbltop.ForeColor = System.Drawing.Color.Red;
+            this.lbltop.Location = new System.Drawing.Point(326, 377);
+            this.lbltop.Name = "lbltop";
+            this.lbltop.Size = new System.Drawing.Size(41, 27);
+            this.lbltop.TabIndex = 10;
+            this.lbltop.Text = "top";
+            this.lbltop.Visible = false;
+            // 
+            // lblcolor
+            // 
+            this.lblcolor.AutoSize = true;
+            this.lblcolor.BackColor = System.Drawing.Color.Transparent;
+            this.lblcolor.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblcolor.ForeColor = System.Drawing.Color.Red;
+            this.lblcolor.Location = new System.Drawing.Point(516, 377);
+            this.lblcolor.Name = "lblcolor";
+            this.lblcolor.Size = new System.Drawing.Size(56, 27);
+            this.lblcolor.TabIndex = 11;
+            this.lblcolor.Text = "color";
+            this.lblcolor.Visible = false;
+            // 
+            // lblbrand
+            // 
+            this.lblbrand.AutoSize = true;
+            this.lblbrand.BackColor = System.Drawing.Color.Transparent;
+            this.lblbrand.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblbrand.ForeColor = System.Drawing.Color.Red;
+            this.lblbrand.Location = new System.Drawing.Point(53, 285);
+            this.lblbrand.Name = "lblbrand";
+            this.lblbrand.Size = new System.Drawing.Size(64, 27);
+            this.lblbrand.TabIndex = 12;
+            this.lblbrand.Text = "brand";
+            this.lblbrand.Visible = false;
             // 
             // frmSell
             // 
@@ -169,10 +240,15 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(701, 661);
             this.ControlBox = false;
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblbrand);
+            this.Controls.Add(this.lblcolor);
+            this.Controls.Add(this.lbltop);
+            this.Controls.Add(this.lblmax);
+            this.Controls.Add(this.lblprice);
+            this.Controls.Add(this.lbldate);
             this.Controls.Add(this.cmbVehicle);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblvehicle);
+            this.Controls.Add(this.lblmodel);
+            this.Controls.Add(this.lbltext);
             this.Controls.Add(this.gpQuestion);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -196,9 +272,14 @@
         private System.Windows.Forms.RadioButton rbCar;
         private System.Windows.Forms.RadioButton rbMotor;
         private System.Windows.Forms.GroupBox gpQuestion;
-        private System.Windows.Forms.Label lblvehicle;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbltext;
+        private System.Windows.Forms.Label lblmodel;
         private System.Windows.Forms.ComboBox cmbVehicle;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbldate;
+        private System.Windows.Forms.Label lblprice;
+        private System.Windows.Forms.Label lblmax;
+        private System.Windows.Forms.Label lbltop;
+        private System.Windows.Forms.Label lblcolor;
+        private System.Windows.Forms.Label lblbrand;
     }
 }

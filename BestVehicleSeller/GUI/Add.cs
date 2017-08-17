@@ -109,6 +109,7 @@ namespace GUI
             lblrazhod.Visible = true;
             txtconsumption.Visible = true;
             btSave.Visible = true;
+            bthelp.Visible = true;
         }
 
         public void SetCarValues()
@@ -148,6 +149,7 @@ namespace GUI
             lblboot.Visible = true;
             txtboot.Visible = true;
             btSave.Visible = true;
+            bthelp.Visible = true;
         }
 
         public void RemoveValues()
@@ -186,6 +188,7 @@ namespace GUI
             lblboot.Visible = false;
             txtboot.Visible = false;
             btSave.Visible = false;
+            bthelp.Visible = false;
         }
 
         private void radioButton1_Click(object sender, EventArgs e)
@@ -311,7 +314,14 @@ namespace GUI
 
         private void btSave_Click(object sender, EventArgs e)
         {
-            if (rbCar.Checked == true)
+            if (txtfuel.Text != "Petrol" && txtfuel.Text != "Diesel" && txtfuel.Text != "Kerosine"
+                && txtfuel.Text != "Ethanol" && txtfuel.Text != "Lpg" && txtfuel.Text != "Cng")
+            {
+                MessageBox.Show($"Please choose correct fuel type. Hint: click on the help button for more help.",
+                    "Important",
+                    MessageBoxButtons.OK);
+            }
+            else if (rbCar.Checked == true)
             {
                 if (cmbBrand.SelectedItem.ToString().Equals("None") || txtModel.Text.Length == 0 ||
                     txtMaxSpeed.Text.Length == 0 ||
@@ -456,7 +466,13 @@ namespace GUI
                 txtfuel.Text = "";
                 txtconsumption.Text = "";
             }
-        }                            
-        
-     }
+        }
+
+        private void bthelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Choose fuel type from these: Petrol, Diesel, Kerosine, Ethanol, Lpg, Cng",
+                "Important",
+                MessageBoxButtons.OK);
+        }
+    }
 }

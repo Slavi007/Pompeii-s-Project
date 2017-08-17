@@ -31,21 +31,17 @@ namespace GUI
         private void rbMotor_Click(object sender, EventArgs e)
         {
             cmbVehicle.DataSource = Global.Param.SellMotorValues();
-            lblvehicle.Text = "Select which Motorcycle do you want to sell?";
+            lbltext.Text = "Select which Motorcycle do you want to sell?";
             cmbVehicle.Visible = true;
-            lblvehicle.Visible = true;
-            label2.Visible = true;
-            label3.Visible = true;
+            lbltext.Visible = true;           
         }
 
         private void rbCar_Click(object sender, EventArgs e)
         {
             cmbVehicle.DataSource = Global.Param.SellCarValues();
-            lblvehicle.Text = "Select which Car do you want to sell?";
+            lbltext.Text = "Select which Car do you want to sell?";
             cmbVehicle.Visible = true;
-            lblvehicle.Visible = true;
-            label2.Visible = true;
-            label3.Visible = true;
+            lbltext.Visible = true;               
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,7 +52,94 @@ namespace GUI
             }
             else
             {
-                Global.Param.DeleteMotor(1);
+                if (rbCar.Checked == true)
+                {
+                    string curr = cmbVehicle.SelectedItem.ToString();
+                    char i = curr.First();
+                    Global.Param.DeleteCar(int.Parse(i.ToString()));
+                    MessageBox.Show($"The car is sold! Cars left: {Global.Param.PrintCar()}",
+                        "Success",
+                        MessageBoxButtons.OK);
+                    lblbrand.Visible = false;
+                    lblmodel.Visible = false;
+                    lbldate.Visible = false;
+                    lblmax.Visible = false;
+                    lbltop.Visible = false;
+                    lblprice.Visible = false;
+                    lblcolor.Visible = false;
+                    if (Global.Param.SellCarValues().Count == 0)
+                    {
+                        cmbVehicle.Items.Clear();
+                        cmbVehicle.SelectedIndex = -1;
+                        cmbVehicle.SelectedText = "There are no Cars left!";
+                    }
+                    else cmbVehicle.DataSource = Global.Param.SellCarValues();                   
+                }
+                else
+                {
+                    string curr = cmbVehicle.SelectedItem.ToString();
+                    char i = curr.First();
+                    Global.Param.DeleteMotor(int.Parse(i.ToString()));
+                    MessageBox.Show($"The motorcycle is sold! Motorcycles left: {Global.Param.PrintMotor()}",
+                        "Success",
+                        MessageBoxButtons.OK);
+                    lblbrand.Visible = false;
+                    lblmodel.Visible = false;
+                    lbldate.Visible = false;
+                    lblmax.Visible = false;
+                    lbltop.Visible = false;
+                    lblprice.Visible = false;
+                    lblcolor.Visible = false;
+                    if (Global.Param.SellMotorValues().Count == 0)
+                    {
+                        cmbVehicle.SelectedText = "There are no Motorcycles left!";
+                    }
+                    else cmbVehicle.DataSource = Global.Param.SellMotorValues();
+                }
+            }
+        }
+
+        private void cmbVehicle_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (rbCar.Checked == true)
+            {
+                lblbrand.Visible = true;
+                lblmodel.Visible = true;
+                lbldate.Visible = true;
+                lblmax.Visible = true;
+                lbltop.Visible = true;
+                lblprice.Visible = true;
+                lblcolor.Visible = true;
+                string curr = cmbVehicle.SelectedItem.ToString();
+                char i = curr.First();
+                var item = Global.Param.CarValue(int.Parse(i.ToString()));
+                lblbrand.Text = $"Brand: {item.Brand}";
+                lblmodel.Text = $"Model: {item.CarModel}";
+                lblcolor.Text = $"Colour: {item.Colour}";
+                lblprice.Text = $"Price: {item.Price.ToString()}BGN";
+                lbldate.Text = $"Date: {item.OriginDate.ToShortDateString().ToString()}";
+                lblmax.Text = $"Max speed: {item.MaxSpeed.ToString()}km/h";
+                lbltop.Text = $"Acceleration: {item.Acceleration.ToString()}sec";
+            }
+            else
+            {
+                lblbrand.Visible = true;
+                lblmodel.Visible = true;
+                lbldate.Visible = true;
+                lblmax.Visible = true;
+                lbltop.Visible = true;
+                lblprice.Visible = true;
+                lblcolor.Visible = true;
+                string curr = cmbVehicle.SelectedItem.ToString();
+                char i = curr.First();
+                var item = Global.Param.MotorValue(int.Parse(i.ToString()));
+                lblbrand.Text = $"Brand: {item.Brand}";
+                lblmodel.Text = $"Model: {item.CarModel}";
+                lblcolor.Text = $"Colour: {item.Colour}";
+                lblprice.Text = $"Price: {item.Price.ToString()}BGN";
+                lbldate.Text = $"Date: {item.OriginDate.ToShortDateString().ToString()}";
+                lblmax.Text = $"Max speed: {item.MaxSpeed.ToString()}km/h";
+                lbltop.Text = $"Acceleration: {item.Acceleration.ToString()}sec";
             }
         }
     }
